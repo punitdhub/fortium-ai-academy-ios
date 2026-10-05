@@ -57,6 +57,7 @@ jobs:
           shot 07-celebration    light -hasOnboarded YES -demoScreen celebration -demoSeed YES
           shot 08-progress       light -hasOnboarded YES -demoScreen progress -demoSeed YES
           shot 09-paywall        light -hasOnboarded YES -demoScreen paywall
+          shot 12-screenshot-card light -hasOnboarded YES -demoScreen screenshot
           shot 10-home-dark      dark  -hasOnboarded YES -userName Punit -demoSeed YES
           shot 11-home-largetext light -hasOnboarded YES -userName Punit -demoSeed YES -largeText YES
           ls -la shots

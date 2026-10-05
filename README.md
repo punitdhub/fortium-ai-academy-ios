@@ -54,7 +54,7 @@ Debug builds also have **Settings → Developer → Unlock Pro (testing only)** 
 
 All lesson content lives in **`FortiumAIAcademy/Content/course.json`**. You don't need to touch Swift to fix a typo, add a lesson, or update a feature that Claude changed.
 
-- Card kinds: `text`, `tip`, `warning`, `steps` (with `items`), `example` (with `prompt`), `compare` (with `bad`/`good`), `tryIt` (with optional `prompt`).
+- Card kinds: `text`, `tip`, `warning`, `steps` (with `items`), `example` (with `prompt`), `compare` (with `bad`/`good`), `tryIt` (with optional `prompt`), `screenshot` (with `image`, `platform` and optional numbered `highlights`). See **SCREENSHOTS.md** for the 23-shot list and how to add them.
 - Inline `**bold**` and `_italic_` work in any text.
 - After editing, run `python3 scripts/validate_content.py` to catch mistakes (also runs in CI).
 - Don't rename a lesson `id` after launch. Learner progress is stored by id.

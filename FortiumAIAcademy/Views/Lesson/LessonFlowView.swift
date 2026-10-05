@@ -48,6 +48,7 @@ struct LessonFlowView: View {
         #if DEBUG
         .onAppear {
             if Demo.is("quiz") { phase = .quiz }
+            if Demo.is("screenshot") { page = cards.firstIndex { $0.kind == .screenshot } ?? 0 }
             if Demo.is("celebration") { phase = .celebrate(Demo.sampleResult(section: section)) }
         }
         #endif
@@ -77,17 +78,17 @@ struct LessonFlowView: View {
     }
 
     private var barProgress: Double {
-        let steps = Double(lesson.cards.count + 1)
+        let steps = Double(cards.count + 1)
         switch phase {
         case .learn: return Double(page + 1) / steps
-        case .quiz, .retry: return Double(lesson.cards.count) / steps
+        case .quiz, .retry: return Double(cards.count) / steps
         case .celebrate: return 1
         }
     }
 
     private var phaseLabel: String {
         switch phase {
-        case .learn: return "\(page + 1)/\(lesson.cards.count)"
+        case .learn: return "\(page + 1)/\(cards.count)"
         case .quiz, .retry: return "Quiz"
         case .celebrate: return "Done"
         }
@@ -98,7 +99,7 @@ struct LessonFlowView: View {
     private var learnPhase: some View {
         VStack(spacing: 0) {
             TabView(selection: $page) {
-                ForEach(Array(lesson.cards.enumerated()), id: \.offset) { index, card in
+                ForEach(Array(cards.enumerated()), id: \.offset) { index, card in
                     ScrollView {
                         VStack(alignment: .leading, spacing: 16) {
                             if index == 0 {
@@ -148,7 +149,9 @@ struct LessonFlowView: View {
         }
     }
 
-    private var isLastCard: Bool { page >= lesson.cards.count - 1 }
+    private var isLastCard: Bool { page >= cards.count - 1 }
+
+    private var cards: [LessonCard] { lesson.cards.filter(\.isDisplayable) }
 
     // MARK: Flow
 
@@ -236,6 +239,11 @@ struct LessonCardView: View {
                            color: Theme.danger, background: Theme.dangerSoft)
                 compareBox(label: "CLEAR", text: card.good ?? "", icon: "checkmark.circle.fill",
                            color: Theme.success, background: Theme.successSoft)
+
+            case .screenshot:
+                cardTitle
+                ScreenshotView(card: card, tint: tint)
+                bodyText
 
             case .tryIt:
                 HStack(spacing: 8) {

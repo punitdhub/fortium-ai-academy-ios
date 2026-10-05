@@ -58,6 +58,10 @@ struct HomeView: View {
                     activeLesson = ActiveLesson(section: section, lesson: lesson)
                 }
                 if Demo.is("paywall") { showPaywall = true }
+                if Demo.is("screenshot"), let section = courseStore.sections.first,
+                   let lesson = section.lessons.first(where: { $0.id == "first-chat" }) {
+                    activeLesson = ActiveLesson(section: section, lesson: lesson)
+                }
             }
             #endif
         }

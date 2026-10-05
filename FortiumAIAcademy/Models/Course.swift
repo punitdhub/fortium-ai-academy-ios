@@ -39,7 +39,17 @@ struct Lesson: Codable, Identifiable, Hashable {
 
 struct LessonCard: Codable, Hashable {
     enum Kind: String, Codable {
-        case text, tip, steps, example, compare, tryIt, warning
+        case text, tip, steps, example, compare, tryIt, warning, screenshot
+    }
+
+    /// A numbered callout drawn over a screenshot. Coordinates are fractions (0–1)
+    /// of the image's width and height, so they survive resizing.
+    struct Highlight: Codable, Hashable {
+        let x: Double
+        let y: Double
+        let w: Double
+        let h: Double
+        var label: String?
     }
 
     let kind: Kind
@@ -49,6 +59,26 @@ struct LessonCard: Codable, Hashable {
     var prompt: String?
     var bad: String?
     var good: String?
+    /// Screenshot file name in Content/Screenshots (e.g. "claude-new-chat.png").
+    var image: String?
+    /// Where the screenshot was taken: "iPhone app", "Web", "Desktop app".
+    var platform: String?
+    var highlights: [Highlight]?
+
+    /// Screenshot cards whose image hasn't been added yet are hidden in App Store builds
+    /// (debug builds show a placeholder so you can see what's missing).
+    var isDisplayable: Bool {
+        guard kind == .screenshot else { return true }
+        #if DEBUG
+        return true
+        #else
+        return screenshotImage != nil
+        #endif
+    }
+
+    var screenshotImage: UIImage? {
+        image.flatMap { UIImage(named: $0) }
+    }
 }
 
 struct QuizQuestion: Codable, Hashable {

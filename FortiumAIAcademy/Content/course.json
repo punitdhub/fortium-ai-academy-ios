@@ -22,6 +22,14 @@
               "body": "**Claude** is an AI assistant made by a company called Anthropic. You talk to it by typing (or speaking) in everyday language — just like sending a text message — and it writes back.\n\nThink of Claude as a very well-read, patient helper who is available any time of day."
             },
             {
+              "kind": "screenshot",
+              "title": "This is what Claude looks like",
+              "image": "claude-first-reply.png",
+              "platform": "iPhone app",
+              "body": "You type at the bottom, and Claude's reply appears above — just like a text conversation.",
+              "highlights": []
+            },
+            {
               "kind": "steps",
               "title": "What people use Claude for",
               "items": [
@@ -120,6 +128,14 @@
               "kind": "warning",
               "title": "Use the official app",
               "body": "Only download the app published by **Anthropic**. Some look-alike apps use similar names. Check the developer name before installing."
+            },
+            {
+              "kind": "screenshot",
+              "title": "The official app in the App Store",
+              "image": "claude-app-store.png",
+              "platform": "iPhone app",
+              "body": "Check that the developer listed under the name is **Anthropic** before you tap Get.",
+              "highlights": []
             }
           ],
           "quiz": [
@@ -170,6 +186,14 @@
               "body": "When you open Claude you'll see a big **message box** at the bottom or center. That's where you type.\n\nAbove or beside it you'll find your **past chats**, so you can return to any conversation later."
             },
             {
+              "kind": "screenshot",
+              "title": "Your starting screen",
+              "image": "claude-new-chat.png",
+              "platform": "iPhone app",
+              "body": "This is a brand-new chat. The numbered spots show where to type, send, and find your past chats.",
+              "highlights": []
+            },
+            {
               "kind": "steps",
               "title": "Having a conversation",
               "items": [
@@ -178,6 +202,14 @@
                 "Read Claude's reply — it appears word by word",
                 "Reply to continue the conversation, just like texting"
               ]
+            },
+            {
+              "kind": "screenshot",
+              "title": "The same thing on a computer",
+              "image": "claude-new-chat-web.png",
+              "platform": "Web",
+              "body": "On claude.ai the layout is similar: your chats are on the left, and the message box is in the middle.",
+              "highlights": []
             },
             {
               "kind": "text",
@@ -347,6 +379,14 @@
               "body": "Made a typo or forgot something? On most devices you can **edit** a message you sent (look for the pencil icon when you hover over or long-press your message). Claude will answer the new version.\n\nYou can also **retry** to get a fresh, different answer to the same message."
             },
             {
+              "kind": "screenshot",
+              "title": "Where to edit and retry",
+              "image": "claude-edit-retry.png",
+              "platform": "Web",
+              "body": "Hover over (or long-press) a message to see these options.",
+              "highlights": []
+            },
+            {
               "kind": "tip",
               "title": "Ask Claude to ask you questions",
               "body": "Not sure what to include? Add: **\"Before you start, ask me any questions you need.\"** Claude will interview you, then write something much better."
@@ -495,6 +535,14 @@
               ]
             },
             {
+              "kind": "screenshot",
+              "title": "The + menu",
+              "image": "claude-plus-menu.png",
+              "platform": "Web",
+              "body": "Tap **+** in the message box to upload files, add photos and turn on tools.",
+              "highlights": []
+            },
+            {
               "kind": "example",
               "title": "Great things to ask about a document",
               "prompt": "Summarize this contract in plain English. Then list anything I should ask about before signing, and any deadlines or fees."
@@ -574,6 +622,14 @@
               "body": "In the Claude app, tap **+** and choose the **camera** to take a photo right away, or pick from your photo library."
             },
             {
+              "kind": "screenshot",
+              "title": "Taking a photo for Claude",
+              "image": "claude-camera-option.png",
+              "platform": "iPhone app",
+              "body": "Tap **+** and choose the camera or your photo library.",
+              "highlights": []
+            },
+            {
               "kind": "tryIt",
               "title": "Try it with something nearby",
               "body": "Take a photo of a product label, a sign, or your fridge and ask Claude a question about it.",
@@ -641,6 +697,14 @@
                 "Tap the file to preview it, then **download** it",
                 "Want changes? Just ask — \"add a column for due dates\""
               ]
+            },
+            {
+              "kind": "screenshot",
+              "title": "A file Claude made for you",
+              "image": "claude-file-download.png",
+              "platform": "Web",
+              "body": "Claude shows the file in the chat. Open it to preview, then download it.",
+              "highlights": []
             },
             {
               "kind": "tip",
@@ -770,9 +834,25 @@
               ]
             },
             {
+              "kind": "screenshot",
+              "title": "Your projects",
+              "image": "claude-projects-list.png",
+              "platform": "Web",
+              "body": "Open **Projects** to see all your projects, or create a new one.",
+              "highlights": []
+            },
+            {
               "kind": "example",
               "title": "Example project instructions",
               "prompt": "I run a small family bakery called Rise & Shine in Austin. Our customers are local families. Always write in a warm, friendly tone, keep posts short, and mention we're open 7am–3pm Tuesday to Sunday."
+            },
+            {
+              "kind": "screenshot",
+              "title": "Inside a project",
+              "image": "claude-project-knowledge.png",
+              "platform": "Web",
+              "body": "Add instructions and knowledge files here. Every chat in this project will use them.",
+              "highlights": []
             },
             {
               "kind": "text",
@@ -924,6 +1004,14 @@
               "body": "When you ask Claude to make something substantial — a document, a presentation, a design, a checklist, a little interactive tool — it can create an **artifact**.\n\nArtifacts open in a **panel beside your conversation**, so you can see the finished thing while you keep chatting about changes."
             },
             {
+              "kind": "screenshot",
+              "title": "An artifact next to the chat",
+              "image": "claude-artifact-panel.png",
+              "platform": "Web",
+              "body": "The creation opens beside your conversation, so you can keep asking for changes.",
+              "highlights": []
+            },
+            {
               "kind": "steps",
               "title": "Things you can make",
               "items": [
@@ -1009,6 +1097,14 @@
               ]
             },
             {
+              "kind": "screenshot",
+              "title": "Editing part of a document",
+              "image": "claude-artifact-edit.png",
+              "platform": "Web",
+              "body": "Highlight the part you want changed, then describe the change.",
+              "highlights": []
+            },
+            {
               "kind": "tip",
               "title": "Give the structure",
               "body": "For slides, tell Claude how many slides and what goes on each one. For docs, list the headings you want. You'll get exactly the shape you need."
@@ -1070,6 +1166,14 @@
                 "Choose who can see it, then copy the link",
                 "Send the link by email, text or chat"
               ]
+            },
+            {
+              "kind": "screenshot",
+              "title": "Sharing an artifact",
+              "image": "claude-artifact-share.png",
+              "platform": "Web",
+              "body": "Choose who can see it, then copy the link.",
+              "highlights": []
             },
             {
               "kind": "text",
@@ -1150,6 +1254,14 @@
               ]
             },
             {
+              "kind": "screenshot",
+              "title": "An answer with sources",
+              "image": "claude-search-sources.png",
+              "platform": "Web",
+              "body": "Tap the source links to check the original pages.",
+              "highlights": []
+            },
+            {
               "kind": "example",
               "title": "A good search prompt",
               "prompt": "Search the web and compare the three most recommended robot vacuums under $400 this year. Show a table with price, battery life and main pros and cons, and link your sources."
@@ -1206,6 +1318,14 @@
               "kind": "text",
               "title": "Beyond a quick search",
               "body": "**Research** is for bigger questions. Instead of one quick search, Claude runs **many searches**, reads lots of sources, and writes a thorough report with citations. It takes a few minutes — like sending an assistant to the library."
+            },
+            {
+              "kind": "screenshot",
+              "title": "Research at work",
+              "image": "claude-research-report.png",
+              "platform": "Web",
+              "body": "Claude shows its progress as it searches many sources, then writes a cited report.",
+              "highlights": []
             },
             {
               "kind": "steps",
@@ -1418,6 +1538,14 @@
               ]
             },
             {
+              "kind": "screenshot",
+              "title": "The Connectors page",
+              "image": "claude-connectors-settings.png",
+              "platform": "Web",
+              "body": "Browse the apps you can connect, and see which ones are already connected.",
+              "highlights": []
+            },
+            {
               "kind": "text",
               "title": "Read before you approve",
               "body": "Some connectors only **read** information. Others can also **take actions** — like drafting an email or creating a calendar event. Claude will usually ask for your confirmation before taking an action."
@@ -1563,6 +1691,14 @@
               "kind": "text",
               "title": "Where you'll find it",
               "body": "Cowork lives right alongside chat in the Claude apps (on paid plans). Larger tasks can keep running in the cloud, so you can check in from your phone or computer."
+            },
+            {
+              "kind": "screenshot",
+              "title": "A Cowork task in progress",
+              "image": "claude-cowork-task.png",
+              "platform": "Desktop app",
+              "body": "Claude shows each step it's taking, and you can check in at any time.",
+              "highlights": []
             },
             {
               "kind": "tip",
@@ -1770,6 +1906,14 @@
               ]
             },
             {
+              "kind": "screenshot",
+              "title": "Memory settings",
+              "image": "claude-memory-settings.png",
+              "platform": "Web",
+              "body": "See what Claude remembers, organized by topic, and edit or delete anything.",
+              "highlights": []
+            },
+            {
               "kind": "text",
               "title": "Telling Claude directly",
               "body": "You can also just say it in a chat: \"Remember that I prefer short answers with bullet points\" or \"Forget what I told you about my old job.\""
@@ -1778,6 +1922,14 @@
               "kind": "tip",
               "title": "Incognito chats",
               "body": "Want a conversation that isn't saved to your history or memory? Start an **incognito chat** (look for the incognito or ghost icon when starting a new chat)."
+            },
+            {
+              "kind": "screenshot",
+              "title": "Starting an incognito chat",
+              "image": "claude-incognito.png",
+              "platform": "Web",
+              "body": "Incognito chats aren't saved to your history or used for memory.",
+              "highlights": []
             }
           ],
           "quiz": [
@@ -1831,6 +1983,14 @@
               "kind": "text",
               "title": "Styles",
               "body": "**Styles** change how Claude writes — for example more **concise**, more **explanatory**, or more **formal**. You can pick a style from the chat's tools menu or create your own by showing Claude a sample of writing you like."
+            },
+            {
+              "kind": "screenshot",
+              "title": "Choosing a style",
+              "image": "claude-style-picker.png",
+              "platform": "Web",
+              "body": "Pick a style from the tools menu to change how Claude writes.",
+              "highlights": []
             },
             {
               "kind": "example",
@@ -1889,6 +2049,14 @@
               "kind": "text",
               "title": "Claude comes in different models",
               "body": "Behind the scenes there are several Claude **models**. Some are the most powerful and thoughtful; others are faster and lighter. The model picker is usually near the message box.\n\nFor most everyday tasks, the **default** model is a great choice."
+            },
+            {
+              "kind": "screenshot",
+              "title": "The model picker",
+              "image": "claude-model-picker.png",
+              "platform": "Web",
+              "body": "Most people can leave this on the default.",
+              "highlights": []
             },
             {
               "kind": "steps",
@@ -1976,6 +2144,14 @@
                 "Speak naturally — pause when you're done",
                 "Listen to Claude's reply, then keep talking"
               ]
+            },
+            {
+              "kind": "screenshot",
+              "title": "Voice mode",
+              "image": "claude-voice-mode.png",
+              "platform": "iPhone app",
+              "body": "Speak naturally. Claude listens, then talks back.",
+              "highlights": []
             },
             {
               "kind": "tip",
@@ -2183,6 +2359,14 @@
                 "Use **incognito chats** for anything you'd rather not keep",
                 "Delete old chats you no longer need"
               ]
+            },
+            {
+              "kind": "screenshot",
+              "title": "Privacy settings",
+              "image": "claude-privacy-settings.png",
+              "platform": "Web",
+              "body": "Review these options once so they match your comfort level.",
+              "highlights": []
             },
             {
               "kind": "text",
