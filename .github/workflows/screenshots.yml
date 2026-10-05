@@ -1,0 +1,76 @@
+name: Simulator screenshots
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["FortiumAIAcademy/**", ".github/workflows/screenshots.yml"]
+
+permissions:
+  contents: write
+
+jobs:
+  screenshots:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pick and boot an iPhone simulator
+        run: |
+          DEVICE=$(xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          devices = [d for rt, ds in json.load(sys.stdin)["devices"].items() if "iOS" in rt for d in ds]
+          phones = [d for d in devices if d["name"].startswith("iPhone") and "Pro" in d["name"] and "Max" not in d["name"]] \
+                   or [d for d in devices if d["name"].startswith("iPhone")]
+          print(phones[-1]["udid"])')
+          echo "DEVICE=$DEVICE" >> "$GITHUB_ENV"
+          xcrun simctl boot "$DEVICE"
+          xcrun simctl bootstatus "$DEVICE" -b
+          xcrun simctl status_bar "$DEVICE" override --time "9:41" --batteryState charged --batteryLevel 100 --cellularBars 4 --wifiBars 3
+
+      - name: Build and install
+        run: |
+          set -o pipefail
+          xcodebuild build -project FortiumAIAcademy.xcodeproj -scheme FortiumAIAcademy \
+            -configuration Debug -destination "id=$DEVICE" -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO | grep -E "error:|BUILD (SUCCEEDED|FAILED)"
+          xcrun simctl install "$DEVICE" build/Build/Products/Debug-iphonesimulator/FortiumAIAcademy.app
+
+      - name: Capture screens
+        run: |
+          mkdir -p shots
+          BUNDLE=com.fortiumgroup.aiacademy
+          shot() {  # name appearance [launch args...]
+            local name=$1 appearance=$2; shift 2
+            xcrun simctl ui "$DEVICE" appearance "$appearance"
+            xcrun simctl terminate "$DEVICE" "$BUNDLE" 2>/dev/null || true
+            xcrun simctl launch "$DEVICE" "$BUNDLE" -celebrations NO "$@" >/dev/null
+            sleep 5
+            xcrun simctl io "$DEVICE" screenshot "shots/$name.png"
+          }
+          shot 01-onboarding     light -hasOnboarded NO
+          shot 02-home           light -hasOnboarded YES -userName Punit -demoSeed YES
+          shot 03-builder        light -hasOnboarded YES -demoScreen builder
+          shot 04-wizard-review  light -hasOnboarded YES -demoScreen wizard
+          shot 05-lesson         light -hasOnboarded YES -demoScreen lesson
+          shot 06-quiz           light -hasOnboarded YES -demoScreen quiz
+          shot 07-celebration    light -hasOnboarded YES -demoScreen celebration -demoSeed YES
+          shot 08-progress       light -hasOnboarded YES -demoScreen progress -demoSeed YES
+          shot 09-paywall        light -hasOnboarded YES -demoScreen paywall
+          shot 10-home-dark      dark  -hasOnboarded YES -userName Punit -demoSeed YES
+          shot 11-home-largetext light -hasOnboarded YES -userName Punit -demoSeed YES -largeText YES
+          ls -la shots
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: screenshots
+          path: shots
+
+      - name: Publish to the screenshots branch
+        run: |
+          cd shots
+          git init -q -b screenshots
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add . && git commit -q -m "Simulator screenshots for ${GITHUB_SHA::7}"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" screenshots

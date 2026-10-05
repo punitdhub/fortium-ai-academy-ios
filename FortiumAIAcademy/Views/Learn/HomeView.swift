@@ -51,6 +51,15 @@ struct HomeView: View {
                 LessonFlowView(section: active.section, lesson: active.lesson)
             }
             .sheet(isPresented: $showPaywall) { PaywallView() }
+            #if DEBUG
+            .onAppear {
+                if ["lesson", "quiz", "celebration"].contains(Demo.screen ?? ""),
+                   let section = courseStore.sections.dropFirst().first, let lesson = section.lessons.first {
+                    activeLesson = ActiveLesson(section: section, lesson: lesson)
+                }
+                if Demo.is("paywall") { showPaywall = true }
+            }
+            #endif
         }
     }
 

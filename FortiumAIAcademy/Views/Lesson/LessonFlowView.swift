@@ -45,6 +45,12 @@ struct LessonFlowView: View {
         }
         .background(Theme.background.ignoresSafeArea())
         .animation(.easeInOut(duration: 0.3), value: phase)
+        #if DEBUG
+        .onAppear {
+            if Demo.is("quiz") { phase = .quiz }
+            if Demo.is("celebration") { phase = .celebrate(Demo.sampleResult(section: section)) }
+        }
+        #endif
     }
 
     // MARK: Top bar

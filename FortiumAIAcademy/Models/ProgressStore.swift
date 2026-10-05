@@ -51,6 +51,9 @@ final class ProgressStore {
         } else {
             data = ProgressData()
         }
+        #if DEBUG
+        if Demo.seedProgress { data = Demo.sampleProgress() }
+        #endif
     }
 
     // MARK: Queries

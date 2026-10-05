@@ -62,7 +62,20 @@ struct LargeTextModifier: ViewModifier {
 
 struct MainTabView: View {
     enum Tab: Hashable { case learn, build, progress, settings }
-    @State private var selection: Tab = .learn
+    @State private var selection: Tab = Self.initialTab
+
+    private static var initialTab: Tab {
+        #if DEBUG
+        switch Demo.screen {
+        case "builder", "wizard": return .build
+        case "progress": return .progress
+        case "settings": return .settings
+        default: return .learn
+        }
+        #else
+        return .learn
+        #endif
+    }
 
     var body: some View {
         TabView(selection: $selection) {

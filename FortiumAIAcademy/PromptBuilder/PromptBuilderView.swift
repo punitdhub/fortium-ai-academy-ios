@@ -61,6 +61,9 @@ struct PromptBuilderView: View {
             PromptWizardView(goal: goal)
         }
         .sheet(isPresented: $showPaywall) { PaywallView() }
+        #if DEBUG
+        .onAppear { if Demo.is("wizard") { selectedGoal = PromptCatalog.goals[0] } }
+        #endif
     }
 
     private var header: some View {
@@ -173,7 +176,15 @@ struct PromptWizardView: View {
     @FocusState private var editorFocused: Bool
 
     init(goal: PromptGoal) {
-        _draft = State(initialValue: PromptDraft(goal: goal))
+        var draft = PromptDraft(goal: goal)
+        #if DEBUG
+        if Demo.is("wizard") {
+            Demo.fill(&draft)
+            _step = State(initialValue: .review)
+            _finalText = State(initialValue: draft.assembled)
+        }
+        #endif
+        _draft = State(initialValue: draft)
     }
 
     var body: some View {
