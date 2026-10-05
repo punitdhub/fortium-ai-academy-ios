@@ -5,6 +5,7 @@ struct SettingsView: View {
     @Environment(SubscriptionStore.self) var store
     @Environment(ProgressStore.self) var progress
     @Environment(\.openURL) var openURL
+    @Environment(ReminderManager.self) var reminders
 
     @AppStorage(SettingsKey.userName) var userName = ""
     @AppStorage(SettingsKey.largeText) var largeText = false
@@ -33,6 +34,8 @@ struct SettingsView: View {
                 } footer: {
                     Text("Larger text makes lessons easier to read. You can also change text size for all apps in the iPhone Settings app under Display & Brightness.")
                 }
+
+                reminderSection
 
                 Section("Academy Pro") {
                     HStack {
@@ -91,6 +94,7 @@ struct SettingsView: View {
                 #endif
             }
             .navigationTitle("Settings")
+            .task { await reminders.refreshAuthorization() }
             .sheet(isPresented: $showPaywall) { PaywallView() }
             .manageSubscriptionsSheet(isPresented: $showManage)
             .confirmationDialog("Reset all progress?", isPresented: $confirmReset, titleVisibility: .visible) {
@@ -106,6 +110,37 @@ struct SettingsView: View {
             } message: {
                 Text(store.errorMessage ?? "")
             }
+        }
+    }
+
+    @ViewBuilder
+    private var reminderSection: some View {
+        Section {
+            Toggle("Daily reminder", isOn: Binding(
+                get: { reminders.isEnabled && !reminders.isBlockedInSettings },
+                set: { on in
+                    if on { Task { await reminders.enable() } } else { reminders.disable() }
+                }
+            ))
+            if reminders.isEnabled && !reminders.isBlockedInSettings {
+                DatePicker("Remind me at", selection: Binding(
+                    get: { reminders.time },
+                    set: { reminders.setTime($0) }
+                ), displayedComponents: .hourAndMinute)
+            }
+            if reminders.isBlockedInSettings {
+                VStack(alignment: .leading, spacing: 8) {
+                    Label("Notifications are turned off for AI Academy", systemImage: "bell.slash.fill")
+                        .foregroundStyle(Theme.warning)
+                    Button("Turn them on in iPhone Settings") {
+                        if let url = URL(string: UIApplication.openSettingsURLString) { openURL(url) }
+                    }
+                }
+            }
+        } header: {
+            Text("Reminders")
+        } footer: {
+            Text("A friendly nudge once a day. If you've already learned today, we won't remind you, and if your streak is about to end we'll let you know.")
         }
     }
 }

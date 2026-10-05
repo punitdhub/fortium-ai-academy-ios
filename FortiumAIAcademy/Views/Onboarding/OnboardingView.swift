@@ -1,14 +1,20 @@
 import SwiftUI
 
-/// Four gentle welcome screens. Designed for people who have never used an AI app.
+/// Five gentle welcome screens. Designed for people who have never used an AI app.
 struct OnboardingView: View {
     @AppStorage(SettingsKey.hasOnboarded) var hasOnboarded = false
     @AppStorage(SettingsKey.userName) var userName = ""
     @AppStorage(SettingsKey.interests) var interestsRaw = ""
     @AppStorage(SettingsKey.largeText) var largeText = false
 
+    @Environment(ReminderManager.self) var reminders
+
     @State var page = 0
+    @State var wantsReminder = true
+    @State var reminderTime = Calendar.current.date(bySettingHour: 19, minute: 0, second: 0, of: Date()) ?? Date()
     @FocusState var nameFocused: Bool
+
+    private let lastPage = 4
 
     struct Interest: Hashable {
         let title: String
@@ -30,7 +36,7 @@ struct OnboardingView: View {
     var body: some View {
         VStack(spacing: 0) {
             HStack(spacing: 6) {
-                ForEach(0..<4) { index in
+                ForEach(0...lastPage, id: \.self) { index in
                     Capsule()
                         .fill(index <= page ? Theme.gold : Theme.surfaceRaised)
                         .frame(height: 5)
@@ -43,23 +49,77 @@ struct OnboardingView: View {
                 interestsPage.tag(1)
                 comfortPage.tag(2)
                 namePage.tag(3)
+                reminderPage.tag(4)
             }
             .tabViewStyle(.page(indexDisplayMode: .never))
             .animation(.easeInOut, value: page)
 
-            Button(page == 3 ? "Start learning" : "Continue") {
+            Button(page == lastPage ? "Start learning" : "Continue") {
                 Haptics.tap()
                 nameFocused = false
-                if page < 3 {
+                if page < lastPage {
                     withAnimation { page += 1 }
                 } else {
-                    hasOnboarded = true
+                    finish()
                 }
             }
             .buttonStyle(PrimaryButtonStyle())
             .padding()
         }
         .background(Theme.background.ignoresSafeArea())
+        #if DEBUG
+        .onAppear { if Demo.is("reminder") { page = lastPage } }
+        #endif
+    }
+
+    private func finish() {
+        Task {
+            if wantsReminder {
+                reminders.setTime(reminderTime)
+                await reminders.enable() // shows the iOS permission prompt
+            }
+            hasOnboarded = true
+        }
+    }
+
+    private var reminderPage: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            Spacer()
+            ZStack {
+                Circle().fill(Theme.goldGradient).frame(width: 88, height: 88)
+                Image(systemName: "bell.badge.fill")
+                    .font(.system(size: 38))
+                    .foregroundStyle(.white)
+            }
+            .frame(maxWidth: .infinity)
+            Text("Build a daily habit")
+                .font(.rounded(.largeTitle, weight: .bold))
+            Text("People who practice a little each day remember much more. Would you like a friendly daily reminder?")
+                .font(.rounded(.body))
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+
+            VStack(spacing: 0) {
+                Toggle(isOn: $wantsReminder) {
+                    Label("Remind me every day", systemImage: "bell.fill")
+                        .font(.rounded(.headline, weight: .semibold))
+                }
+                .tint(Theme.gold)
+                .padding(.vertical, 6)
+                if wantsReminder {
+                    Divider().padding(.vertical, 8)
+                    DatePicker("Time", selection: $reminderTime, displayedComponents: .hourAndMinute)
+                        .font(.rounded(.headline, weight: .semibold))
+                }
+            }
+            .card()
+            .animation(.easeInOut, value: wantsReminder)
+
+            TipRow(text: "We'll skip the reminder on days you've already learned, and you can change or turn it off anytime in Settings.")
+            Spacer()
+        }
+        .padding()
+        .scrollablePage()
     }
 
     private var welcome: some View {

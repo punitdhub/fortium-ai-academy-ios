@@ -6,6 +6,7 @@ struct FortiumAIAcademyApp: App {
     @State private var progressStore = ProgressStore()
     @State private var subscriptionStore = SubscriptionStore()
     @State private var promptLibrary = PromptLibrary()
+    @State private var reminders = ReminderManager()
 
     init() {
         UserDefaults.standard.register(defaults: [
@@ -22,6 +23,7 @@ struct FortiumAIAcademyApp: App {
                 .environment(progressStore)
                 .environment(subscriptionStore)
                 .environment(promptLibrary)
+                .environment(reminders)
         }
     }
 }
@@ -30,6 +32,9 @@ struct RootView: View {
     @AppStorage(SettingsKey.hasOnboarded) private var hasOnboarded = false
     @AppStorage(SettingsKey.largeText) private var largeText = false
     @Environment(ProgressStore.self) private var progress
+    @Environment(CourseStore.self) private var courseStore
+    @Environment(ReminderManager.self) private var reminders
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some View {
         Group {
@@ -41,7 +46,25 @@ struct RootView: View {
         }
         .tint(Theme.brand)
         .modifier(LargeTextModifier(enabled: largeText))
-        .onAppear { progress.registerVisit() }
+        .onAppear {
+            progress.registerVisit()
+            updateReminders()
+        }
+        .onChange(of: scenePhase) { _, phase in
+            if phase == .active {
+                progress.registerVisit()
+                updateReminders()
+            }
+        }
+        // Any lesson or prompt updates lastActiveDay, so reminders always reflect today.
+        .onChange(of: progress.data.lastActiveDay) { _, _ in updateReminders() }
+    }
+
+    private func updateReminders() {
+        let next = courseStore.firstIncomplete(completed: progress.data.completedLessons)
+        reminders.update(context: .init(lastActiveDay: progress.data.lastActiveDay,
+                                        streak: progress.displayStreak,
+                                        nextLessonTitle: next?.lesson.title))
     }
 }
 

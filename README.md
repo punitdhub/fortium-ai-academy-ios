@@ -14,6 +14,7 @@ A beginner-friendly, Udemy-style course app that teaches non-technical people ho
 | **Course** | 12 sections · 36 lessons · 108 quiz questions, written for beginners. Swipeable lesson cards (explanations, step lists, tips, warnings, vague-vs-clear prompt comparisons, "Your turn" exercises that copy a prompt and open Claude). Sections 1–2 are free. |
 | **Quizzes** | 3 questions per lesson, instant feedback with friendly explanations. Pass mark is 50%. Below that, the learner gets "So close!" with review/retry options, never a failure screen. |
 | **Progress & wins** | XP, daily streaks, per-section progress bars, an overall progress ring, 10 badges, friendly XP "levels", confetti celebrations after every lesson (bigger ones for sections), and a shareable **certificate** on completion. |
+| **Daily reminders** | Opt-in on the last welcome page or in Settings (default 7 pm). Smart scheduling: no reminder on days you've already learned, a "your streak ends tonight 🔥" nudge when it's about to break, and varied gentle nudges naming your next lesson otherwise. Local notifications only, no server. |
 | **Subscription** | StoreKit 2, "Academy Pro" monthly ($4.99) and yearly ($29.99 with a 7-day free trial). Prices are placeholders you set in App Store Connect. Includes restore, manage subscription, and the legal text Apple requires. |
 | **Accessibility** | A "Larger text" comfort mode (offered during onboarding), full Dynamic Type, VoiceOver labels, Reduce Motion support (confetti is turned off), haptics toggle, and light/dark mode. |
 
@@ -101,6 +102,5 @@ Everything is stored **on-device** (Application Support JSON + UserDefaults). Th
 ## Ideas for v1.1
 - Load `course.json` from a server so lessons update without an app release
 - Real screenshots/short videos per lesson
-- Daily reminder notifications to protect streaks
 - "Prompt of the day" and more Prompt Builder goals tailored to the learner's onboarding interests
 - Localization (Spanish, Hindi, …)

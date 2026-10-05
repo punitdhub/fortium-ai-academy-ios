@@ -35,4 +35,7 @@ enum SettingsKey {
     static let haptics = "haptics"
     static let celebrations = "celebrations"
     static let debugUnlockPro = "debugUnlockPro"
+    static let remindersEnabled = "remindersEnabled"
+    static let reminderHour = "reminderHour"
+    static let reminderMinute = "reminderMinute"
 }
