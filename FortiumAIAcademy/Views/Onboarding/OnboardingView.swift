@@ -90,6 +90,7 @@ struct OnboardingView: View {
             Spacer()
         }
         .padding()
+        .scrollablePage()
     }
 
     private func feature(_ icon: String, _ text: String) -> some View {
@@ -99,6 +100,7 @@ struct OnboardingView: View {
                 .frame(width: 28)
             Text(text)
                 .font(.rounded(.body, weight: .medium))
+                .fixedSize(horizontal: false, vertical: true)
         }
     }
 
@@ -143,6 +145,7 @@ struct OnboardingView: View {
             Spacer()
         }
         .padding()
+        .scrollablePage()
     }
 
     private var comfortPage: some View {
@@ -160,6 +163,7 @@ struct OnboardingView: View {
             Spacer()
         }
         .padding()
+        .scrollablePage()
     }
 
     private func textChoice(title: String, sample: String, large: Bool) -> some View {
@@ -205,5 +209,18 @@ struct OnboardingView: View {
             Spacer()
         }
         .padding()
+        .scrollablePage()
+    }
+}
+
+private extension View {
+    /// Keeps onboarding pages vertically centered, but scrollable when text is large.
+    func scrollablePage() -> some View {
+        GeometryReader { geo in
+            ScrollView {
+                self.frame(minHeight: geo.size.height)
+            }
+            .scrollBounceBehavior(.basedOnSize)
+        }
     }
 }
