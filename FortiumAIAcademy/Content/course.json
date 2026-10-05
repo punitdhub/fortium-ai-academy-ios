@@ -1,0 +1,2563 @@
+{
+  "version": 1,
+  "title": "Claude AI Essentials",
+  "sections": [
+    {
+      "id": "meet-claude",
+      "title": "Meet Claude",
+      "subtitle": "What Claude is, how to get it, and how to have your very first conversation.",
+      "icon": "hand.wave.fill",
+      "color": "#4A6C8C",
+      "isFree": true,
+      "lessons": [
+        {
+          "id": "what-is-claude",
+          "title": "What is Claude?",
+          "summary": "A friendly introduction to your new AI assistant.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Your new helper",
+              "body": "**Claude** is an AI assistant made by a company called Anthropic. You talk to it by typing (or speaking) in everyday language — just like sending a text message — and it writes back.\n\nThink of Claude as a very well-read, patient helper who is available any time of day."
+            },
+            {
+              "kind": "steps",
+              "title": "What people use Claude for",
+              "items": [
+                "**Writing** — emails, letters, posts, reports",
+                "**Understanding** — explaining confusing topics, documents or bills",
+                "**Planning** — trips, meals, events, projects",
+                "**Thinking** — brainstorming ideas, weighing decisions",
+                "**Doing** — creating documents, slides and spreadsheets for you"
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "You don't need special words",
+              "body": "There are no commands to memorize. If you can describe what you want to a friend, you can ask Claude."
+            },
+            {
+              "kind": "warning",
+              "title": "Claude can make mistakes",
+              "body": "Claude is very capable, but it is not perfect. It can occasionally state something wrong with confidence. For important facts — health, money, legal matters — always double-check with a trusted source or professional."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Say hello",
+              "body": "Open Claude and send this message. Notice how Claude explains things in plain language.",
+              "prompt": "Hi Claude! I'm new to AI. In simple terms, what are 5 everyday ways you could help someone like me?"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What is the best way to talk to Claude?",
+              "options": [
+                "Using special computer commands",
+                "Only in English with perfect grammar",
+                "Only with short keywords, like a search engine",
+                "In everyday language, like talking to a person"
+              ],
+              "answer": 3,
+              "explanation": "Claude understands normal, everyday language. Typos and casual phrasing are fine."
+            },
+            {
+              "question": "Which of these should you double-check with a trusted source?",
+              "options": [
+                "A birthday poem",
+                "Advice about a medication dose",
+                "Ideas for a team lunch",
+                "A list of gift ideas"
+              ],
+              "answer": 1,
+              "explanation": "Claude can make mistakes. For health, money or legal matters, always confirm with a professional."
+            },
+            {
+              "question": "Who makes Claude?",
+              "options": [
+                "Google",
+                "Microsoft",
+                "Anthropic",
+                "Apple"
+              ],
+              "answer": 2,
+              "explanation": "Claude is made by Anthropic, an AI safety and research company."
+            }
+          ]
+        },
+        {
+          "id": "getting-claude",
+          "title": "Getting Claude on your devices",
+          "summary": "Web, phone and computer — and what the plans mean.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Three ways to use Claude",
+              "body": "Claude works the same way everywhere, and your chats sync between devices when you're signed in:\n\n• **Website:** go to **claude.ai** in any web browser\n• **Phone app:** search \"Claude\" in the App Store or Google Play\n• **Computer app:** download Claude for Mac or Windows from claude.ai"
+            },
+            {
+              "kind": "steps",
+              "title": "Creating your account",
+              "items": [
+                "Go to **claude.ai** or open the Claude app",
+                "Sign up with your email address, or continue with Google or Apple",
+                "Check your email for a sign-in link or code if asked",
+                "Answer a few quick questions — and you're in!"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Free vs. paid plans",
+              "body": "**Free** is a great way to start and includes the core features.\n\n**Pro** and **Max** are paid personal plans. They let you send many more messages, use the most advanced features, and choose the most powerful models.\n\n**Team** and **Enterprise** are for businesses, with admin controls and extra privacy features."
+            },
+            {
+              "kind": "tip",
+              "title": "Start free",
+              "body": "Try the free plan first. If you find yourself running out of messages or wanting features like Research or Cowork, that's a good sign it's time to upgrade."
+            },
+            {
+              "kind": "warning",
+              "title": "Use the official app",
+              "body": "Only download the app published by **Anthropic**. Some look-alike apps use similar names. Check the developer name before installing."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Where can you use Claude?",
+              "options": [
+                "On the web, phone apps and computer apps",
+                "Only inside Microsoft Word",
+                "Only on an iPhone",
+                "Only on a computer"
+              ],
+              "answer": 0,
+              "explanation": "Claude is available at claude.ai, as phone apps, and as desktop apps for Mac and Windows."
+            },
+            {
+              "question": "What's the main benefit of a paid plan like Pro?",
+              "options": [
+                "More usage and access to advanced features",
+                "It's the only way to use Claude",
+                "It lets other people read your chats",
+                "It removes all mistakes"
+              ],
+              "answer": 0,
+              "explanation": "Paid plans give you more messages and advanced features. The free plan still works well for getting started."
+            },
+            {
+              "question": "When downloading the Claude app, what should you check?",
+              "options": [
+                "That it has a blue icon",
+                "That it has the most stars",
+                "That the developer is Anthropic",
+                "That it's the cheapest"
+              ],
+              "answer": 2,
+              "explanation": "Look-alike apps exist. The official Claude app is published by Anthropic."
+            }
+          ]
+        },
+        {
+          "id": "first-chat",
+          "title": "Your first conversation",
+          "summary": "A quick tour of the chat screen and how a conversation flows.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "The chat screen",
+              "body": "When you open Claude you'll see a big **message box** at the bottom or center. That's where you type.\n\nAbove or beside it you'll find your **past chats**, so you can return to any conversation later."
+            },
+            {
+              "kind": "steps",
+              "title": "Having a conversation",
+              "items": [
+                "Type your request in the message box",
+                "Tap the **send** arrow (or press Enter on a computer)",
+                "Read Claude's reply — it appears word by word",
+                "Reply to continue the conversation, just like texting"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "It's a conversation, not a search",
+              "body": "Unlike a search engine, Claude remembers everything earlier **in the same chat**. So you can say \"make it shorter\" or \"now do the same for my sister\" and Claude knows what you mean."
+            },
+            {
+              "kind": "tip",
+              "title": "Start a new chat for a new topic",
+              "body": "Each chat is its own conversation. When you switch to a totally different task, start a **new chat** — Claude stays focused and gives better answers."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Have a two-step conversation",
+              "body": "Send the first message, then follow up with \"Make it more fun and add one game idea.\"",
+              "prompt": "Help me plan a simple 1-hour birthday celebration at home for a 7-year-old. Keep it under $50."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Inside a single chat, Claude...",
+              "options": [
+                "Needs you to repeat everything",
+                "Forgets each message right away",
+                "Remembers what was said earlier in that chat",
+                "Can only answer one question"
+              ],
+              "answer": 2,
+              "explanation": "Within a chat, Claude keeps track of the whole conversation, so you can build on earlier messages."
+            },
+            {
+              "question": "When should you start a new chat?",
+              "options": [
+                "Only when Claude asks you to",
+                "When you switch to a completely different topic",
+                "Never — always use one chat",
+                "After every single message"
+              ],
+              "answer": 1,
+              "explanation": "New topic, new chat. It keeps Claude focused and makes chats easy to find later."
+            },
+            {
+              "question": "Claude's reply isn't quite right. What's the easiest fix?",
+              "options": [
+                "Wait a day",
+                "Delete the app",
+                "Reply and tell Claude what to change",
+                "Start over with the exact same message"
+              ],
+              "answer": 2,
+              "explanation": "Just reply with what you'd like changed — \"shorter\", \"friendlier\", \"add prices\". It's a conversation."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prompting",
+      "title": "Asking Claude Well",
+      "subtitle": "The simple recipe for great answers — the most valuable skill in this course.",
+      "icon": "text.bubble.fill",
+      "color": "#A87F40",
+      "isFree": true,
+      "lessons": [
+        {
+          "id": "prompt-recipe",
+          "title": "The 5-ingredient prompt recipe",
+          "summary": "Task, context, audience, tone and format.",
+          "minutes": 6,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "What's a \"prompt\"?",
+              "body": "A **prompt** is simply the message you send to Claude. The clearer your prompt, the better the answer.\n\nGood news: you don't need to be a writer. You just need to include a few key ingredients."
+            },
+            {
+              "kind": "steps",
+              "title": "The 5 ingredients",
+              "items": [
+                "**Task** — what you want done (\"Write an email asking for…\")",
+                "**Context** — the background (\"My manager is busy this month…\")",
+                "**Audience** — who it's for (\"for my manager\")",
+                "**Tone** — how it should sound (\"friendly but professional\")",
+                "**Format** — the shape of the answer (\"under 100 words, with a subject line\")"
+              ]
+            },
+            {
+              "kind": "compare",
+              "title": "See the difference",
+              "bad": "Write an email to my boss.",
+              "good": "Write a short, friendly but professional email to my manager asking for next Friday off. I've finished my project early and will make sure my tasks are covered. Include a subject line and keep it under 100 words.",
+              "body": "Both ask for the same thing — but one gives Claude everything it needs."
+            },
+            {
+              "kind": "tip",
+              "title": "Brief Claude like a new colleague",
+              "body": "Imagine handing the task to a smart new coworker who knows nothing about your situation. What would they need to know? Put that in your prompt."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Use the recipe",
+              "body": "Try this prompt, then change the details to match a real email you need to write.",
+              "prompt": "Write a warm, professional email to a client named Sarah thanking her for meeting with us yesterday. Mention we'll send the proposal by Friday. Keep it under 120 words and include a subject line."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Which ingredient tells Claude the background of your situation?",
+              "options": [
+                "Format",
+                "Context",
+                "Audience",
+                "Tone"
+              ],
+              "answer": 1,
+              "explanation": "Context is the background: the situation, details and limits Claude should know about."
+            },
+            {
+              "question": "Which prompt is likely to get the best result?",
+              "options": [
+                "\"Write a short, friendly email to my manager asking for Friday off; my project is done early\"",
+                "\"Write an email\"",
+                "\"Help\"",
+                "\"Email boss\""
+              ],
+              "answer": 0,
+              "explanation": "The best prompt includes the task, context, audience, tone and format."
+            },
+            {
+              "question": "\"Keep it under 100 words, as a bulleted list\" is an example of…",
+              "options": [
+                "Tone",
+                "Format",
+                "Audience",
+                "Context"
+              ],
+              "answer": 1,
+              "explanation": "Format describes the shape and length of the answer."
+            }
+          ]
+        },
+        {
+          "id": "follow-ups",
+          "title": "Follow-ups, edits and retries",
+          "summary": "How to steer Claude toward exactly what you want.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Your first answer is a first draft",
+              "body": "Experienced users rarely accept the very first reply. They **steer**. Treat Claude's answer as a draft and tell it what to improve."
+            },
+            {
+              "kind": "steps",
+              "title": "Handy follow-up phrases",
+              "items": [
+                "\"Make it shorter\" / \"Add more detail\"",
+                "\"Make it sound friendlier\" (or more formal)",
+                "\"Give me 3 different versions\"",
+                "\"Explain that like I'm new to this\"",
+                "\"Turn this into a bulleted checklist\""
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Edit your message or retry",
+              "body": "Made a typo or forgot something? On most devices you can **edit** a message you sent (look for the pencil icon when you hover over or long-press your message). Claude will answer the new version.\n\nYou can also **retry** to get a fresh, different answer to the same message."
+            },
+            {
+              "kind": "tip",
+              "title": "Ask Claude to ask you questions",
+              "body": "Not sure what to include? Add: **\"Before you start, ask me any questions you need.\"** Claude will interview you, then write something much better."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Practice steering",
+              "body": "Send this, then follow up with: \"Make it more casual and add a joke.\"",
+              "prompt": "Write a short message inviting my neighbors to a backyard get-together this Saturday at 4pm."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Claude's answer is too formal. What should you do?",
+              "options": [
+                "Close the app",
+                "Accept it anyway",
+                "Start a new account",
+                "Reply: \"Make it sound friendlier\""
+              ],
+              "answer": 3,
+              "explanation": "Just ask for the change. Follow-ups are the fastest path to a great result."
+            },
+            {
+              "question": "What does the \"retry\" option do?",
+              "options": [
+                "Deletes the chat",
+                "Generates a fresh, different answer to the same message",
+                "Sends your message to a person",
+                "Translates the answer"
+              ],
+              "answer": 1,
+              "explanation": "Retry gives you another version of the answer to the same request."
+            },
+            {
+              "question": "A great trick when you're not sure what to include is to…",
+              "options": [
+                "Copy a random prompt",
+                "Use only capital letters",
+                "Write as little as possible",
+                "Ask Claude to ask you questions first"
+              ],
+              "answer": 3,
+              "explanation": "Asking Claude to interview you first helps it gather the context it needs."
+            }
+          ]
+        },
+        {
+          "id": "trust-but-verify",
+          "title": "Getting accurate answers",
+          "summary": "Why Claude sometimes gets things wrong — and how to catch it.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Why mistakes happen",
+              "body": "Claude learns from a huge amount of text, and it predicts helpful answers. Usually it's right, but sometimes it can mix things up or be out of date. AI mistakes are often called **hallucinations**."
+            },
+            {
+              "kind": "steps",
+              "title": "Simple ways to get more accurate answers",
+              "items": [
+                "Give Claude the source — paste the text or attach the document",
+                "Ask: \"If you're not sure, say so\"",
+                "Turn on **web search** for recent news, prices and events",
+                "Ask: \"What are the sources for this?\" and check them",
+                "Verify important facts with a trusted website or professional"
+              ]
+            },
+            {
+              "kind": "example",
+              "title": "A prompt that encourages honesty",
+              "prompt": "Using only the document I've attached, list the three main deadlines. If something isn't in the document, say \"not mentioned\" instead of guessing."
+            },
+            {
+              "kind": "warning",
+              "title": "High-stakes decisions",
+              "body": "For medical, legal, tax or financial decisions, use Claude to **understand and prepare** — for example, to write questions for your doctor — but make the final decision with a qualified professional."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What's an AI \"hallucination\"?",
+              "options": [
+                "When the AI states something incorrect as if it's true",
+                "A dream feature",
+                "A visual effect in the app",
+                "A type of subscription"
+              ],
+              "answer": 0,
+              "explanation": "A hallucination is a confident-sounding answer that is wrong. That's why checking important facts matters."
+            },
+            {
+              "question": "Which helps Claude give accurate answers about your document?",
+              "options": [
+                "Attaching or pasting the actual document",
+                "Using emojis",
+                "Describing it from memory",
+                "Asking a vague question"
+              ],
+              "answer": 0,
+              "explanation": "When Claude can read the real source, it can quote and summarize it accurately."
+            },
+            {
+              "question": "How should you use Claude for a medical question?",
+              "options": [
+                "Only ask about medicine names",
+                "Follow its advice instead of a doctor",
+                "Use it to understand and prepare questions, then talk to a professional",
+                "Never mention health at all"
+              ],
+              "answer": 2,
+              "explanation": "Claude is great for understanding and preparing — decisions belong with a qualified professional."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "files-images",
+      "title": "Files, Photos & Documents",
+      "subtitle": "Share documents and pictures with Claude — and get finished files back.",
+      "icon": "doc.on.doc.fill",
+      "color": "#2E7D6B",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "uploading-files",
+          "title": "Sharing documents with Claude",
+          "summary": "PDFs, Word files, spreadsheets and more.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Claude can read your files",
+              "body": "You can attach documents to your message and Claude will read them: **PDFs, Word documents, text files, spreadsheets, presentations** and more.\n\nThis is one of the most useful things Claude does — it can read a 40-page document in seconds."
+            },
+            {
+              "kind": "steps",
+              "title": "How to attach a file",
+              "items": [
+                "In the message box, tap the **+** (plus) or paperclip button",
+                "Choose **Upload a file** (or **Add photos** on your phone)",
+                "Pick the file from your device",
+                "Type what you want Claude to do with it — then send"
+              ]
+            },
+            {
+              "kind": "example",
+              "title": "Great things to ask about a document",
+              "prompt": "Summarize this contract in plain English. Then list anything I should ask about before signing, and any deadlines or fees."
+            },
+            {
+              "kind": "tip",
+              "title": "Tell Claude what to look for",
+              "body": "\"Summarize this\" is fine. \"Summarize this for a busy manager, focusing on costs and risks\" is much better."
+            },
+            {
+              "kind": "warning",
+              "title": "Think before you upload",
+              "body": "Avoid uploading files with passwords, full bank or ID numbers, or other people's private information. If you're using Claude for work, follow your company's rules."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "How do you attach a file to a message?",
+              "options": [
+                "Email it to Claude",
+                "Tap the + or paperclip button in the message box",
+                "You can't attach files",
+                "Read it aloud"
+              ],
+              "answer": 1,
+              "explanation": "Use the + (or paperclip) button in the message box to upload files and photos."
+            },
+            {
+              "question": "Which request will get the most useful summary?",
+              "options": [
+                "\"Summarize this for my manager, focusing on costs and risks, in 5 bullets\"",
+                "\"Summarize\"",
+                "\"Read\"",
+                "\"What?\""
+              ],
+              "answer": 0,
+              "explanation": "Telling Claude who it's for and what to focus on gives a far better summary."
+            },
+            {
+              "question": "What should you avoid uploading?",
+              "options": [
+                "A file with passwords or full bank numbers",
+                "A public news article",
+                "A recipe",
+                "Meeting notes you wrote"
+              ],
+              "answer": 0,
+              "explanation": "Keep sensitive personal details like passwords and account numbers out of your chats."
+            }
+          ]
+        },
+        {
+          "id": "photos-screenshots",
+          "title": "Photos and screenshots",
+          "summary": "Let Claude see what you see.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Claude can understand images",
+              "body": "Snap a photo or share a screenshot and Claude can describe it, read the text in it, and help you act on it."
+            },
+            {
+              "kind": "steps",
+              "title": "Everyday ideas",
+              "items": [
+                "A confusing **bill or letter** — \"What does this mean, and what do I need to do?\"",
+                "A **screenshot of an error** — \"How do I fix this?\"",
+                "What's in your **fridge** — \"What can I cook for dinner?\"",
+                "A **chart from a report** — \"Explain the main trend\"",
+                "**Handwritten notes** — \"Type these up neatly\""
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "On your phone",
+              "body": "In the Claude app, tap **+** and choose the **camera** to take a photo right away, or pick from your photo library."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Try it with something nearby",
+              "body": "Take a photo of a product label, a sign, or your fridge and ask Claude a question about it.",
+              "prompt": "Here's a photo of what's in my fridge. Suggest 3 easy dinners I could make tonight in under 30 minutes."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What can Claude do with a photo of a confusing letter?",
+              "options": [
+                "Only tell you the colors",
+                "Read it and explain what it means",
+                "Mail a reply for you",
+                "Nothing — Claude only reads typed text"
+              ],
+              "answer": 1,
+              "explanation": "Claude can read text in images and explain it in plain language."
+            },
+            {
+              "question": "Where do you find the camera option in the Claude phone app?",
+              "options": [
+                "Under the + button in the message box",
+                "In the Settings app",
+                "By shaking your phone",
+                "It isn't available on phones"
+              ],
+              "answer": 0,
+              "explanation": "Tap + in the message box to take a photo or choose one from your library."
+            },
+            {
+              "question": "Which is a good use of a screenshot?",
+              "options": [
+                "Deleting apps",
+                "Changing your password",
+                "Asking how to fix an error message",
+                "Making your phone faster"
+              ],
+              "answer": 2,
+              "explanation": "Screenshots of error messages are a great way to get step-by-step help."
+            }
+          ]
+        },
+        {
+          "id": "creating-files",
+          "title": "Getting finished files back",
+          "summary": "Have Claude create documents, spreadsheets and slides you can download.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "From answer to finished file",
+              "body": "Claude doesn't just write text in the chat. It can **create real files** — Word documents, Excel spreadsheets, PowerPoint presentations and PDFs — that you can download and use right away."
+            },
+            {
+              "kind": "example",
+              "title": "Ask for a file",
+              "prompt": "Create an Excel spreadsheet for my monthly household budget with categories for rent, groceries, utilities, transport and fun. Add a total row and a column for notes."
+            },
+            {
+              "kind": "steps",
+              "title": "Working with the file",
+              "items": [
+                "Ask for the type of file you want (\"as a Word document\", \"as a spreadsheet\")",
+                "Claude builds it and shows it in the chat",
+                "Tap the file to preview it, then **download** it",
+                "Want changes? Just ask — \"add a column for due dates\""
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "Name the file type",
+              "body": "Say exactly what you want: \"as a PowerPoint\", \"as a PDF\", \"as an Excel file\". Otherwise Claude may reply with regular text."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Which of these can Claude create for you to download?",
+              "options": [
+                "Only images",
+                "Word, Excel, PowerPoint and PDF files",
+                "Only plain text",
+                "Only emails"
+              ],
+              "answer": 1,
+              "explanation": "Claude can create common file types that you can download and use."
+            },
+            {
+              "question": "How do you make sure you get a spreadsheet instead of text?",
+              "options": [
+                "Ask for it \"as an Excel spreadsheet\"",
+                "Use capital letters",
+                "Upload a blank file first",
+                "Hope for the best"
+              ],
+              "answer": 0,
+              "explanation": "Name the file type you want in your request."
+            },
+            {
+              "question": "The spreadsheet needs another column. What do you do?",
+              "options": [
+                "Edit the app's code",
+                "Ask Claude to add it",
+                "Buy a different plan",
+                "Start over in a new chat"
+              ],
+              "answer": 1,
+              "explanation": "Just ask for the change in the same chat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "projects",
+      "title": "Projects",
+      "subtitle": "Keep related chats, files and instructions together — so Claude always has context.",
+      "icon": "folder.fill",
+      "color": "#5C7B96",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "what-are-projects",
+          "title": "What are Projects?",
+          "summary": "Your organized workspaces inside Claude.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "A folder with a memory",
+              "body": "A **Project** is like a labeled folder for one area of your life or work — \"My Bakery\", \"Job Search\", \"Kitchen Renovation\".\n\nInside a project you keep:\n• **Chats** about that topic\n• **Files** Claude should know about (\"knowledge\")\n• **Instructions** for how Claude should behave"
+            },
+            {
+              "kind": "text",
+              "title": "Why it matters",
+              "body": "Without a project, you have to re-explain your situation in every new chat. With a project, Claude already knows your background, your documents and your preferences — every time."
+            },
+            {
+              "kind": "tip",
+              "title": "One project per big topic",
+              "body": "Create projects for ongoing things you'll come back to many times. Quick one-off questions are fine in a regular chat."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What is a Claude Project?",
+              "options": [
+                "A paid add-on app",
+                "A video call",
+                "A type of chart",
+                "A workspace that keeps related chats, files and instructions together"
+              ],
+              "answer": 3,
+              "explanation": "Projects group chats, knowledge files and custom instructions for one topic."
+            },
+            {
+              "question": "What's the main benefit of a project?",
+              "options": [
+                "It hides your chats",
+                "Claude already knows your background in every new chat in it",
+                "It removes the need for prompts",
+                "It makes Claude type faster"
+              ],
+              "answer": 1,
+              "explanation": "Projects save you from re-explaining your situation every time."
+            },
+            {
+              "question": "Which is the best candidate for a project?",
+              "options": [
+                "An ongoing job search with your resume and target roles",
+                "Asking for a joke",
+                "Converting inches to centimeters",
+                "A one-time question about the weather"
+              ],
+              "answer": 0,
+              "explanation": "Ongoing topics you return to are perfect for projects."
+            }
+          ]
+        },
+        {
+          "id": "project-setup",
+          "title": "Setting up a project",
+          "summary": "Add knowledge files and instructions.",
+          "minutes": 6,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "Create a project",
+              "items": [
+                "Open **Projects** from the sidebar or menu",
+                "Tap **New project** and give it a clear name",
+                "Add a short description of what it's for",
+                "Add files to its **knowledge** (resume, price list, style guide…)",
+                "Write **instructions** for how Claude should respond"
+              ]
+            },
+            {
+              "kind": "example",
+              "title": "Example project instructions",
+              "prompt": "I run a small family bakery called Rise & Shine in Austin. Our customers are local families. Always write in a warm, friendly tone, keep posts short, and mention we're open 7am–3pm Tuesday to Sunday."
+            },
+            {
+              "kind": "text",
+              "title": "What to put in knowledge",
+              "body": "Add anything you'd otherwise paste again and again: product lists, policies, your resume, brand guidelines, meeting notes, a recipe collection. Claude will refer to them when relevant."
+            },
+            {
+              "kind": "tip",
+              "title": "Keep instructions short and clear",
+              "body": "A few sentences about who you are, who you're writing for, and your preferred style is usually all you need. You can edit them anytime."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Plan your first project",
+              "body": "Ask Claude to help you design a project for something in your life.",
+              "prompt": "I want to create a Claude Project for planning my family's meals each week. What should I name it, what files should I add, and what instructions should I give?"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Where do project instructions apply?",
+              "options": [
+                "Only to uploaded files",
+                "To every chat inside that project",
+                "To all of Claude, everywhere",
+                "Only to the first chat"
+              ],
+              "answer": 1,
+              "explanation": "Instructions guide Claude in every chat within that project."
+            },
+            {
+              "question": "Which file is a good fit for a job-search project's knowledge?",
+              "options": [
+                "Your resume",
+                "Your password list",
+                "A random meme",
+                "Your bank statement"
+              ],
+              "answer": 0,
+              "explanation": "Add documents Claude will refer to often — like your resume for job applications."
+            },
+            {
+              "question": "What makes good project instructions?",
+              "options": [
+                "Leaving them blank always",
+                "Several pages of rules",
+                "Writing them in code",
+                "A few clear sentences on who you are, your audience and style"
+              ],
+              "answer": 3,
+              "explanation": "Short, clear instructions work best and are easy to update."
+            }
+          ]
+        },
+        {
+          "id": "project-ideas",
+          "title": "Real-life project ideas",
+          "summary": "Inspiration for work, business and home.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "At work",
+              "items": [
+                "**Weekly reports** — add templates and past reports",
+                "**Client X** — add the contract, notes and email history",
+                "**Job search** — resume, target roles, cover letter style"
+              ]
+            },
+            {
+              "kind": "steps",
+              "title": "For a small business",
+              "items": [
+                "**Marketing** — brand voice, products, past posts",
+                "**Customer service** — policies, FAQs, refund rules",
+                "**Operations** — price lists, supplier info, checklists"
+              ]
+            },
+            {
+              "kind": "steps",
+              "title": "At home",
+              "items": [
+                "**Health journey** — doctor's notes and questions (no ID numbers)",
+                "**Home renovation** — budget, quotes, photos",
+                "**Family travel** — preferences, passport expiry dates, ideas"
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "Projects can be shared on team plans",
+              "body": "On Team and Enterprise plans, you can share projects with coworkers so everyone gets the same knowledge and instructions."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Which knowledge would help a customer service project most?",
+              "options": [
+                "Your refund policy and FAQs",
+                "Nothing — leave it empty",
+                "Your vacation photos",
+                "A movie list"
+              ],
+              "answer": 0,
+              "explanation": "Policies and FAQs let Claude answer customers consistently and accurately."
+            },
+            {
+              "question": "On Team and Enterprise plans, projects can be…",
+              "options": [
+                "Converted into apps only",
+                "Shared with coworkers",
+                "Printed automatically",
+                "Used without an account"
+              ],
+              "answer": 1,
+              "explanation": "Team plans allow sharing projects so everyone works from the same context."
+            },
+            {
+              "question": "Which project idea is a good fit for a household?",
+              "options": [
+                "Storing passwords",
+                "Home renovation with budget and quotes",
+                "Saving full credit card numbers",
+                "None — projects are only for work"
+              ],
+              "answer": 1,
+              "explanation": "Projects work great for personal goals too — just keep sensitive numbers out."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "artifacts",
+      "title": "Artifacts: Docs, Slides & Designs",
+      "subtitle": "Create polished documents, presentations, designs and mini-apps you can edit and share.",
+      "icon": "square.on.square.dashed",
+      "color": "#8978AF",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "what-are-artifacts",
+          "title": "What are Artifacts?",
+          "summary": "Creations that open beside your chat.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Bigger than a chat reply",
+              "body": "When you ask Claude to make something substantial — a document, a presentation, a design, a checklist, a little interactive tool — it can create an **artifact**.\n\nArtifacts open in a **panel beside your conversation**, so you can see the finished thing while you keep chatting about changes."
+            },
+            {
+              "kind": "steps",
+              "title": "Things you can make",
+              "items": [
+                "**Docs** — reports, guides, plans, letters",
+                "**Slides** — presentations you can download as PowerPoint or PDF",
+                "**Designs** — flyers, social graphics, one-pagers",
+                "**Interactive tools** — a budget calculator, a quiz, a habit tracker",
+                "**Charts and diagrams** — visualize your numbers or a process"
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "Just ask",
+              "body": "You don't need to find a special button. Ask for what you want — \"make me a one-page flyer for…\" — and Claude will create an artifact when it makes sense."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Make your first artifact",
+              "body": "Ask Claude for something you could actually use this week.",
+              "prompt": "Create a simple, printable weekly chore chart for a family of four, with a column for each day and a fun reward at the bottom."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Where do artifacts appear?",
+              "options": [
+                "In a panel beside the conversation",
+                "On your phone's home screen",
+                "Only after you download them",
+                "In your email"
+              ],
+              "answer": 0,
+              "explanation": "Artifacts open beside the chat so you can see the creation and keep refining it."
+            },
+            {
+              "question": "Which is a good artifact request?",
+              "options": [
+                "\"What time is it?\"",
+                "\"Create a one-page flyer for our bake sale on Saturday\"",
+                "\"Thanks!\"",
+                "\"Hi\""
+              ],
+              "answer": 1,
+              "explanation": "Substantial, reusable creations like flyers, docs and slides are perfect artifacts."
+            },
+            {
+              "question": "Do you need a special command to create an artifact?",
+              "options": [
+                "Yes, a secret code",
+                "Only on computers",
+                "No — describe what you want and Claude creates it",
+                "Yes, you must type in capitals"
+              ],
+              "answer": 2,
+              "explanation": "Just ask in plain language. Claude decides when an artifact is the best format."
+            }
+          ]
+        },
+        {
+          "id": "docs-slides-designs",
+          "title": "Docs, slides and designs",
+          "summary": "Use templates to create professional work fast.",
+          "minutes": 6,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Start from a template",
+              "body": "On paid plans, Claude offers ready-made **templates** for Docs, Slides and Designs. Look for an **Output** or **Artifacts** option, or simply ask: \"Make this as a slide deck.\""
+            },
+            {
+              "kind": "example",
+              "title": "A presentation request",
+              "prompt": "Create a 6-slide presentation for my team about our new customer feedback process. Slide 1: title. Slides 2–5: why it matters, the 3 steps, who does what, timeline. Slide 6: questions. Keep each slide to 3–4 short points."
+            },
+            {
+              "kind": "steps",
+              "title": "Make it yours",
+              "items": [
+                "Ask for changes in the chat (\"make the colors warmer\")",
+                "**Edit directly**: click into a Doc and type, like a normal document",
+                "**Highlight a part and describe a change** — Claude edits just that part",
+                "Download Slides as **PowerPoint** or **PDF** when you're done"
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "Give the structure",
+              "body": "For slides, tell Claude how many slides and what goes on each one. For docs, list the headings you want. You'll get exactly the shape you need."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "How can you change just one paragraph of a Doc?",
+              "options": [
+                "Start a new chat",
+                "Delete the whole doc",
+                "You can't edit docs",
+                "Highlight it and describe the change"
+              ],
+              "answer": 3,
+              "explanation": "Highlight the part you want changed and describe the edit — Claude updates just that part."
+            },
+            {
+              "question": "What formats can Slides be downloaded in?",
+              "options": [
+                "PowerPoint or PDF",
+                "They can't be downloaded",
+                "Only as an image",
+                "Only as plain text"
+              ],
+              "answer": 0,
+              "explanation": "Slides can be exported to PowerPoint or PDF."
+            },
+            {
+              "question": "What makes a slide-deck request work best?",
+              "options": [
+                "Stating the number of slides and what goes on each",
+                "Asking for 100 slides",
+                "Saying \"slides please\"",
+                "Using as few words as possible"
+              ],
+              "answer": 0,
+              "explanation": "Clear structure in your request gives you a well-organized deck."
+            }
+          ]
+        },
+        {
+          "id": "sharing-artifacts",
+          "title": "Sharing and publishing",
+          "summary": "Send your creations to others — safely.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Private until you share",
+              "body": "Artifacts start **private** — only you can see them. When you're ready, you can share or publish them with a link."
+            },
+            {
+              "kind": "steps",
+              "title": "To share an artifact",
+              "items": [
+                "Open the artifact panel",
+                "Look for the **Share** or **Publish** option",
+                "Choose who can see it, then copy the link",
+                "Send the link by email, text or chat"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Others can build on it",
+              "body": "When you publish an artifact, people with the link can view it — and, depending on your settings, make their **own copy** to customize without changing yours."
+            },
+            {
+              "kind": "warning",
+              "title": "Check before you publish",
+              "body": "Anyone with a public link can see the content. Read it over and remove names, phone numbers or private details before you publish."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Who can see a new artifact by default?",
+              "options": [
+                "Only you",
+                "Everyone on the internet",
+                "All Claude users",
+                "Your contacts"
+              ],
+              "answer": 0,
+              "explanation": "Artifacts start private until you choose to share them."
+            },
+            {
+              "question": "Before publishing, you should…",
+              "options": [
+                "Remove private details like phone numbers",
+                "Make it as long as possible",
+                "Add your home address",
+                "Turn off your phone"
+              ],
+              "answer": 0,
+              "explanation": "A public link can be seen by anyone who has it, so remove private information first."
+            },
+            {
+              "question": "If someone copies your published artifact and edits it…",
+              "options": [
+                "Your original changes too",
+                "Your original stays the same",
+                "It deletes yours",
+                "You get charged"
+              ],
+              "answer": 1,
+              "explanation": "Copies are separate. Your original is unaffected."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "search-research",
+      "title": "Web Search & Research",
+      "subtitle": "Get up-to-date answers with sources — and deep research reports.",
+      "icon": "globe.americas.fill",
+      "color": "#3A7CA5",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "web-search",
+          "title": "Searching the web with Claude",
+          "summary": "Current news, prices, hours and facts — with sources.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Why web search matters",
+              "body": "Claude learned from information up to a certain date. For anything **recent or changing** — news, prices, opening hours, sports scores, product reviews — Claude can **search the web** and show you its sources."
+            },
+            {
+              "kind": "steps",
+              "title": "How to use it",
+              "items": [
+                "Make sure **web search** is turned on (look in the tools or **+** menu)",
+                "Ask your question — mention it's about something current",
+                "Claude searches, reads the results and answers",
+                "Tap the **source links** to check the original pages"
+              ]
+            },
+            {
+              "kind": "example",
+              "title": "A good search prompt",
+              "prompt": "Search the web and compare the three most recommended robot vacuums under $400 this year. Show a table with price, battery life and main pros and cons, and link your sources."
+            },
+            {
+              "kind": "tip",
+              "title": "Ask for sources",
+              "body": "Add \"include links to your sources\" so you can verify the details yourself."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "When should you use web search?",
+              "options": [
+                "To write an email",
+                "To summarize your own file",
+                "For current information like prices and news",
+                "For a birthday poem"
+              ],
+              "answer": 2,
+              "explanation": "Web search is for recent and changing information."
+            },
+            {
+              "question": "How can you check where an answer came from?",
+              "options": [
+                "Ask a friend",
+                "Search results are always right",
+                "You can't",
+                "Tap the source links Claude provides"
+              ],
+              "answer": 3,
+              "explanation": "Claude shows source links so you can verify the details."
+            },
+            {
+              "question": "Which is the best search prompt?",
+              "options": [
+                "\"Good?\"",
+                "\"Compare the top 3 robot vacuums under $400 this year in a table with sources\"",
+                "\"Search\"",
+                "\"Vacuums\""
+              ],
+              "answer": 1,
+              "explanation": "Specific questions with a format and a request for sources get the best results."
+            }
+          ]
+        },
+        {
+          "id": "research-mode",
+          "title": "Research: your personal researcher",
+          "summary": "Deep, multi-source reports on bigger questions.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Beyond a quick search",
+              "body": "**Research** is for bigger questions. Instead of one quick search, Claude runs **many searches**, reads lots of sources, and writes a thorough report with citations. It takes a few minutes — like sending an assistant to the library."
+            },
+            {
+              "kind": "steps",
+              "title": "Great uses for Research",
+              "items": [
+                "Comparing options for a big purchase or decision",
+                "Understanding a new market or competitor for your business",
+                "Preparing for an important meeting or trip",
+                "Learning everything about a health condition before an appointment"
+              ]
+            },
+            {
+              "kind": "example",
+              "title": "A Research request",
+              "prompt": "Research the pros and cons of solar panels for a home in Phoenix. Include typical costs, available incentives this year, payback time, and questions to ask installers. Cite your sources."
+            },
+            {
+              "kind": "tip",
+              "title": "Be specific about what you need",
+              "body": "Tell Research the decision you're making and what the final report should include. It will plan its research around your goal."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "How is Research different from a quick web search?",
+              "options": [
+                "It's only for coding",
+                "It's slower but runs many searches and writes a thorough cited report",
+                "It only uses one website",
+                "It doesn't use sources"
+              ],
+              "answer": 1,
+              "explanation": "Research takes a few minutes to explore many sources and produce a detailed report."
+            },
+            {
+              "question": "Which question is best suited to Research?",
+              "options": [
+                "\"What's 2+2?\"",
+                "\"Should we expand our bakery into catering? Research market, costs and risks.\"",
+                "\"Say hi\"",
+                "\"Fix this typo\""
+              ],
+              "answer": 1,
+              "explanation": "Big, multi-part questions are where Research shines."
+            },
+            {
+              "question": "What should a Research request include?",
+              "options": [
+                "Your password",
+                "Only one word",
+                "Nothing — it guesses",
+                "Your goal and what the report should cover"
+              ],
+              "answer": 3,
+              "explanation": "Describing your goal and desired report helps Research plan its work."
+            }
+          ]
+        },
+        {
+          "id": "checking-sources",
+          "title": "Checking sources like a pro",
+          "summary": "Quick habits to trust what you read.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "The 4-question source check",
+              "items": [
+                "**Who** published it? (A government site, a known newspaper, a random blog?)",
+                "**When** was it published? Is it still current?",
+                "**Does it actually say** what Claude summarized?",
+                "**Do other sources agree?**"
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "Ask Claude to grade its sources",
+              "body": "Try: \"Which of these sources are most reliable, and why?\" Claude can help you think critically about where information came from."
+            },
+            {
+              "kind": "warning",
+              "title": "Watch out for old information",
+              "body": "Prices, laws and product details change. If a source is a few years old, ask Claude to look for something more recent."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Which is a sign of a reliable source?",
+              "options": [
+                "A pop-up advertisement",
+                "A website with lots of typos",
+                "An anonymous post with no date",
+                "A recognized organization with a recent publication date"
+              ],
+              "answer": 3,
+              "explanation": "Known publishers and recent dates are good signs."
+            },
+            {
+              "question": "What should you do if a source is several years old?",
+              "options": [
+                "Look for more recent information",
+                "Ignore all sources",
+                "Share it widely",
+                "Trust it completely"
+              ],
+              "answer": 0,
+              "explanation": "Things change. Ask Claude to find something more current."
+            },
+            {
+              "question": "Why click the source link?",
+              "options": [
+                "To check it really says what the summary says",
+                "To earn points",
+                "To make Claude faster",
+                "It's required to continue"
+              ],
+              "answer": 0,
+              "explanation": "Verifying the original helps you catch any mistakes in the summary."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "connectors",
+      "title": "Connectors & Apps",
+      "subtitle": "Connect Claude to Gmail, Google Drive, Calendar, Slack and more — safely.",
+      "icon": "link.circle.fill",
+      "color": "#3F8F8C",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "what-are-connectors",
+          "title": "What are connectors?",
+          "summary": "Let Claude work with the apps you already use.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Bringing your tools together",
+              "body": "**Connectors** let Claude securely access apps you use — like **Gmail, Google Calendar, Google Drive, Microsoft 365, Slack, Notion** and many more — when you give permission.\n\nInstead of copying and pasting, you can ask: \"What's on my calendar Thursday?\" or \"Find the latest invoice from Acme in my email.\""
+            },
+            {
+              "kind": "steps",
+              "title": "Examples of what becomes possible",
+              "items": [
+                "\"Summarize unread emails from my manager this week\"",
+                "\"Find a 30-minute slot next week for a call with Sam\"",
+                "\"Find our Q3 sales deck in Drive and pull the key numbers\"",
+                "\"Catch me up on the #marketing Slack channel\""
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "You're in control",
+              "body": "Claude only accesses a connected app when you allow it, and you can disconnect any connector at any time in **Settings**."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What do connectors do?",
+              "options": [
+                "Replace your email app",
+                "Connect you to customer support",
+                "Let Claude securely work with apps like Gmail and Google Drive",
+                "Make your phone faster"
+              ],
+              "answer": 2,
+              "explanation": "Connectors give Claude permission-based access to your other apps."
+            },
+            {
+              "question": "Which request uses a calendar connector?",
+              "options": [
+                "\"Translate hello\"",
+                "\"Write a poem\"",
+                "\"Find a free 30-minute slot next week\"",
+                "\"Explain gravity\""
+              ],
+              "answer": 2,
+              "explanation": "Checking availability needs access to your calendar."
+            },
+            {
+              "question": "Can you remove a connector later?",
+              "options": [
+                "No, it's permanent",
+                "Only on weekends",
+                "Yes, anytime in Settings",
+                "Only by deleting your account"
+              ],
+              "answer": 2,
+              "explanation": "You can disconnect connectors whenever you like."
+            }
+          ]
+        },
+        {
+          "id": "connecting-safely",
+          "title": "Connecting an app safely",
+          "summary": "Step-by-step setup and smart permissions.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "To add a connector",
+              "items": [
+                "Open **Settings** and find **Connectors** (or use the **+** menu in a chat)",
+                "Browse or search for the app you want, e.g. Google Drive",
+                "Tap **Connect** and sign in to that app",
+                "Review what Claude will be allowed to do, then approve",
+                "Back in a chat, make sure the connector is switched on"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Read before you approve",
+              "body": "Some connectors only **read** information. Others can also **take actions** — like drafting an email or creating a calendar event. Claude will usually ask for your confirmation before taking an action."
+            },
+            {
+              "kind": "warning",
+              "title": "Only connect what you need",
+              "body": "Connect the apps you'll actually use with Claude. At work, check your company's policy first — your IT team may manage which connectors are allowed."
+            },
+            {
+              "kind": "tip",
+              "title": "Start small",
+              "body": "Try one connector first — Google Calendar or Drive are great starting points — and get comfortable before adding more."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Where do you usually manage connectors?",
+              "options": [
+                "In your phone's camera",
+                "In the App Store",
+                "In your email signature",
+                "In Settings → Connectors"
+              ],
+              "answer": 3,
+              "explanation": "Connectors are managed in Claude's Settings (and can be toggled in the chat's tools menu)."
+            },
+            {
+              "question": "Before connecting a work app, you should…",
+              "options": [
+                "Check your company's policy",
+                "Turn off security",
+                "Share your password with Claude",
+                "Connect everything at once"
+              ],
+              "answer": 0,
+              "explanation": "Many companies manage which apps can be connected. Check first."
+            },
+            {
+              "question": "What's the difference between read and action permissions?",
+              "options": [
+                "Action permissions can create or change things, like drafting an email",
+                "Action permissions are only for games",
+                "There is none",
+                "Read permissions delete files"
+              ],
+              "answer": 0,
+              "explanation": "Read lets Claude look; action lets Claude do things, usually with your confirmation."
+            }
+          ]
+        },
+        {
+          "id": "claude-everywhere",
+          "title": "Claude inside your other tools",
+          "summary": "Chrome, Excel, PowerPoint and Slack.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Claude where you work",
+              "body": "Beyond the Claude app, Claude can also work **inside** some tools you already use:\n\n• **Claude in Chrome** — a browser extension that can help you on web pages\n• **Claude for Excel and PowerPoint** — help with spreadsheets and slides right in Microsoft Office\n• **Claude in Slack** — mention Claude in Slack to hand off a task (business plans)"
+            },
+            {
+              "kind": "tip",
+              "title": "Availability varies",
+              "body": "Some of these depend on your plan or your company's settings. If you don't see one, check Claude's website or ask your IT team."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Explore what's available to you",
+              "body": "Ask Claude what integrations exist for the tools you use.",
+              "prompt": "I mostly use Gmail, Excel and Google Calendar at work. What are some practical ways Claude can help me with each of them?"
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What is Claude in Chrome?",
+              "options": [
+                "A Chrome theme",
+                "A browser extension that helps you on web pages",
+                "A type of connector for email",
+                "A web browser made by Anthropic"
+              ],
+              "answer": 1,
+              "explanation": "Claude in Chrome is an extension that brings Claude into your web browser."
+            },
+            {
+              "question": "Where can Claude help with spreadsheets directly?",
+              "options": [
+                "In your camera app",
+                "In Microsoft Excel",
+                "In the App Store",
+                "Only on paper"
+              ],
+              "answer": 1,
+              "explanation": "There are Claude add-ins for Excel and PowerPoint."
+            },
+            {
+              "question": "If you don't see an integration, what's the likely reason?",
+              "options": [
+                "You need a new email address",
+                "It depends on your plan or company settings",
+                "Your phone is broken",
+                "Claude is offline forever"
+              ],
+              "answer": 1,
+              "explanation": "Availability can vary by plan and by your organization's settings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cowork",
+      "title": "Cowork: Let Claude Do the Work",
+      "subtitle": "Hand Claude a multi-step task and let it work through it for you.",
+      "icon": "person.2.badge.gearshape.fill",
+      "color": "#D9643A",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "what-is-cowork",
+          "title": "What is Cowork?",
+          "summary": "From chatting to delegating.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "From answers to actions",
+              "body": "In a normal chat, Claude **answers** you. With **Cowork**, Claude can **carry out a task** with many steps — like organizing files, pulling information from several places, and producing a finished report — while you do something else."
+            },
+            {
+              "kind": "steps",
+              "title": "Examples of Cowork tasks",
+              "items": [
+                "\"Go through these 40 receipts and make an expense spreadsheet\"",
+                "\"Read the attached meeting notes and draft follow-up emails for each person\"",
+                "\"Research 10 local venues for our event and build a comparison table\"",
+                "\"Organize my Downloads folder into sensible subfolders\""
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Where you'll find it",
+              "body": "Cowork lives right alongside chat in the Claude apps (on paid plans). Larger tasks can keep running in the cloud, so you can check in from your phone or computer."
+            },
+            {
+              "kind": "tip",
+              "title": "Think \"delegate\"",
+              "body": "If a task would take you 30+ minutes of clicking, copying and pasting, it's a great candidate for Cowork."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What's the main difference between chat and Cowork?",
+              "options": [
+                "Chat is paid and Cowork is free",
+                "There's no difference",
+                "Cowork is only for drawing",
+                "Cowork carries out multi-step tasks for you"
+              ],
+              "answer": 3,
+              "explanation": "Cowork is about delegation — Claude works through a whole task."
+            },
+            {
+              "question": "Which is a good Cowork task?",
+              "options": [
+                "\"Say hello\"",
+                "\"What's 5 times 5?\"",
+                "\"Tell me a joke\"",
+                "\"Turn these 40 receipts into an expense spreadsheet\""
+              ],
+              "answer": 3,
+              "explanation": "Multi-step, time-consuming tasks are ideal for Cowork."
+            },
+            {
+              "question": "Can a Cowork task keep going while you do something else?",
+              "options": [
+                "Only on a desktop computer that's turned off",
+                "No, you must watch every second",
+                "Yes",
+                "Only at night"
+              ],
+              "answer": 2,
+              "explanation": "Cowork tasks can keep running so you can check in later."
+            }
+          ]
+        },
+        {
+          "id": "delegating-well",
+          "title": "Giving Claude a task",
+          "summary": "How to brief Claude for multi-step work.",
+          "minutes": 6,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "A great task brief includes",
+              "items": [
+                "**The goal** — what \"done\" looks like",
+                "**The inputs** — which files, folders, emails or sites to use",
+                "**The steps** you'd follow, if you know them",
+                "**The output** — a spreadsheet, a document, drafted emails…",
+                "**Checkpoints** — when Claude should stop and ask you"
+              ]
+            },
+            {
+              "kind": "example",
+              "title": "A strong Cowork brief",
+              "prompt": "Using the PDF invoices in my 'Invoices – September' folder, create an Excel sheet with one row per invoice: vendor, date, amount, and due date. Sort by due date. Flag anything due in the next 7 days. Ask me before making any changes to the original files."
+            },
+            {
+              "kind": "text",
+              "title": "Scheduled tasks",
+              "body": "Cowork can also run tasks **on a schedule** — for example, \"Every Monday at 8am, summarize last week's sales emails into a short report.\""
+            },
+            {
+              "kind": "tip",
+              "title": "Review the result",
+              "body": "Treat Cowork's output like work from a capable assistant: review it, then ask for fixes. Claude will update it."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What's the most important part of a task brief?",
+              "options": [
+                "Writing it in capitals",
+                "Using lots of emojis",
+                "A clear description of what \"done\" looks like",
+                "Keeping it to one word"
+              ],
+              "answer": 2,
+              "explanation": "A clear goal helps Claude plan and finish the task the way you want."
+            },
+            {
+              "question": "Why include checkpoints?",
+              "options": [
+                "To slow Claude down for no reason",
+                "Checkpoints aren't allowed",
+                "To earn XP",
+                "So Claude asks you before important or irreversible steps"
+              ],
+              "answer": 3,
+              "explanation": "Checkpoints keep you in control of important decisions."
+            },
+            {
+              "question": "What can scheduled tasks do?",
+              "options": [
+                "Run a task automatically on a regular schedule",
+                "Book flights without asking",
+                "Change your passwords",
+                "Nothing useful"
+              ],
+              "answer": 0,
+              "explanation": "Scheduled tasks repeat on a schedule you choose, like a weekly summary."
+            }
+          ]
+        },
+        {
+          "id": "staying-in-control",
+          "title": "Staying in control",
+          "summary": "Permissions, approvals and good habits.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "You're the manager",
+              "body": "When Claude works on tasks for you, it asks for **permission** before accessing new folders or apps, and before important actions. You can **pause or stop** a task at any time."
+            },
+            {
+              "kind": "steps",
+              "title": "Good habits",
+              "items": [
+                "Give access only to the folders and apps the task needs",
+                "Read permission requests before approving them",
+                "Ask Claude to **show you a plan first** for big tasks",
+                "Keep backups of important files"
+              ]
+            },
+            {
+              "kind": "warning",
+              "title": "Be extra careful with deleting and sending",
+              "body": "For tasks that delete files, send emails or make purchases, always ask Claude to check with you first — and review before you approve."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Can you stop a task that's running?",
+              "options": [
+                "Yes, you can pause or stop it",
+                "Only by contacting support",
+                "Only by restarting your computer",
+                "No, never"
+              ],
+              "answer": 0,
+              "explanation": "You stay in control and can stop a task at any time."
+            },
+            {
+              "question": "For a big task, a smart first step is to…",
+              "options": [
+                "Ask Claude to show you a plan first",
+                "Turn off notifications",
+                "Give access to everything",
+                "Skip all permissions"
+              ],
+              "answer": 0,
+              "explanation": "Reviewing the plan first helps you catch misunderstandings early."
+            },
+            {
+              "question": "Which actions deserve extra care?",
+              "options": [
+                "Reading a document",
+                "Deleting files, sending emails or making purchases",
+                "Creating a draft",
+                "Summarizing notes"
+              ],
+              "answer": 1,
+              "explanation": "Irreversible actions should always be confirmed by you."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "personalize",
+      "title": "Make Claude Yours",
+      "subtitle": "Memory, preferences, styles and choosing the right model.",
+      "icon": "slider.horizontal.3",
+      "color": "#7A5C96",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "memory",
+          "title": "Memory: Claude remembers you",
+          "summary": "What Claude can remember between chats — and how to control it.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Memory between chats",
+              "body": "With **memory** turned on, Claude can remember helpful things from your past conversations — like your job, your preferences, or ongoing projects — so you don't have to repeat yourself."
+            },
+            {
+              "kind": "steps",
+              "title": "Managing memory",
+              "items": [
+                "Open **Settings** and find **Memory**",
+                "Turn memory on or off",
+                "Review what Claude remembers, organized by topic",
+                "Edit or delete anything you don't want remembered"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Telling Claude directly",
+              "body": "You can also just say it in a chat: \"Remember that I prefer short answers with bullet points\" or \"Forget what I told you about my old job.\""
+            },
+            {
+              "kind": "tip",
+              "title": "Incognito chats",
+              "body": "Want a conversation that isn't saved to your history or memory? Start an **incognito chat** (look for the incognito or ghost icon when starting a new chat)."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What does memory let Claude do?",
+              "options": [
+                "Remember other people's chats",
+                "Read your phone's photos automatically",
+                "Remember helpful details across your conversations",
+                "Nothing"
+              ],
+              "answer": 2,
+              "explanation": "Memory carries useful context — like your preferences — between chats."
+            },
+            {
+              "question": "How can you see what Claude remembers?",
+              "options": [
+                "In Settings → Memory",
+                "In the App Store",
+                "By emailing Anthropic",
+                "You can't"
+              ],
+              "answer": 0,
+              "explanation": "You can review, edit and delete memories in Settings."
+            },
+            {
+              "question": "Which chat type isn't saved to history or memory?",
+              "options": [
+                "A shared chat",
+                "An incognito chat",
+                "Every chat",
+                "A project chat"
+              ],
+              "answer": 1,
+              "explanation": "Incognito chats aren't saved to your history or used for memory."
+            }
+          ]
+        },
+        {
+          "id": "preferences-styles",
+          "title": "Preferences and styles",
+          "summary": "Set how Claude talks to you, every time.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Personal preferences",
+              "body": "In **Settings**, you can describe yourself and how you like answers. For example: \"I'm a small business owner. I'm not technical. Please use plain language and give step-by-step instructions.\" Claude will keep this in mind in every chat."
+            },
+            {
+              "kind": "text",
+              "title": "Styles",
+              "body": "**Styles** change how Claude writes — for example more **concise**, more **explanatory**, or more **formal**. You can pick a style from the chat's tools menu or create your own by showing Claude a sample of writing you like."
+            },
+            {
+              "kind": "example",
+              "title": "A helpful preference for beginners",
+              "prompt": "I'm new to technology. Please avoid jargon, explain any technical terms you use, and give instructions one step at a time."
+            },
+            {
+              "kind": "tip",
+              "title": "Keep it short",
+              "body": "A few sentences is plenty. You can update your preferences anytime as you learn what you like."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Where do you set personal preferences?",
+              "options": [
+                "In your phone's wallpaper",
+                "In Settings",
+                "In each file you upload",
+                "They can't be set"
+              ],
+              "answer": 1,
+              "explanation": "Your preferences live in Settings and apply to all your chats."
+            },
+            {
+              "question": "What do Styles change?",
+              "options": [
+                "Your password",
+                "Your subscription",
+                "How Claude writes, e.g. concise or formal",
+                "The app's colors"
+              ],
+              "answer": 2,
+              "explanation": "Styles adjust Claude's writing style."
+            },
+            {
+              "question": "Which is a useful preference for a beginner?",
+              "options": [
+                "\"Answer only in code\"",
+                "\"Use as much jargon as possible\"",
+                "\"Never explain anything\"",
+                "\"Explain technical terms and go one step at a time\""
+              ],
+              "answer": 3,
+              "explanation": "Telling Claude your comfort level helps it explain things clearly."
+            }
+          ]
+        },
+        {
+          "id": "models-thinking",
+          "title": "Models and thinking time",
+          "summary": "Choosing the right Claude for the job.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Claude comes in different models",
+              "body": "Behind the scenes there are several Claude **models**. Some are the most powerful and thoughtful; others are faster and lighter. The model picker is usually near the message box.\n\nFor most everyday tasks, the **default** model is a great choice."
+            },
+            {
+              "kind": "steps",
+              "title": "A simple rule of thumb",
+              "items": [
+                "**Everyday writing and questions** — the default model",
+                "**Complex analysis, long documents, tough decisions** — the most capable model",
+                "**Quick, simple tasks** — a faster model"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Thinking time",
+              "body": "Claude can **think before answering** on hard problems. You may see an option for extended thinking or effort. More thinking can mean better answers for complex questions — it just takes a bit longer."
+            },
+            {
+              "kind": "tip",
+              "title": "Don't overthink it",
+              "body": "Model names change as Anthropic releases new versions. You don't need to memorize them — the default is chosen to work well for most people."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "For most everyday tasks, which model should a beginner use?",
+              "options": [
+                "The oldest model available",
+                "The default model",
+                "A model from another company",
+                "None"
+              ],
+              "answer": 1,
+              "explanation": "The default model is chosen to work well for most tasks."
+            },
+            {
+              "question": "When might extra thinking time help?",
+              "options": [
+                "Writing \"thank you\"",
+                "Saying hello",
+                "A complex problem or tough decision",
+                "Counting to three"
+              ],
+              "answer": 2,
+              "explanation": "Extended thinking helps on harder, multi-step problems."
+            },
+            {
+              "question": "Why don't you need to memorize model names?",
+              "options": [
+                "They change as new versions are released",
+                "Models don't exist",
+                "They're secret",
+                "You can't change models"
+              ],
+              "answer": 0,
+              "explanation": "New models are released regularly; the default keeps you on a good choice."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "voice-mobile",
+      "title": "Voice & Claude on the Go",
+      "subtitle": "Talk to Claude out loud and use it anywhere on your phone.",
+      "icon": "waveform.circle.fill",
+      "color": "#2E7D52",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "voice-mode",
+          "title": "Talking with Claude",
+          "summary": "Have a spoken conversation, hands-free.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "Just talk",
+              "body": "In the Claude phone app, you can have a **voice conversation**: speak naturally and Claude talks back. It's great when you're walking, cooking or driving (hands-free only!), or if typing is difficult."
+            },
+            {
+              "kind": "steps",
+              "title": "Start a voice conversation",
+              "items": [
+                "Open the Claude app on your phone",
+                "Tap the **voice** button (sound-wave icon) near the message box",
+                "Speak naturally — pause when you're done",
+                "Listen to Claude's reply, then keep talking"
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "Dictation vs. voice mode",
+              "body": "The **microphone** on your keyboard turns speech into typed text for a normal message. **Voice mode** is a full spoken back-and-forth conversation."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Practice a conversation",
+              "body": "Use voice mode to practice something you'd like to get better at.",
+              "prompt": "Let's practice small talk for a networking event. Ask me one question at a time and give me friendly feedback."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What is voice mode?",
+              "options": [
+                "A music player",
+                "A ringtone",
+                "A way to call customer support",
+                "A spoken back-and-forth conversation with Claude"
+              ],
+              "answer": 3,
+              "explanation": "Voice mode lets you talk with Claude out loud."
+            },
+            {
+              "question": "What does the keyboard microphone do?",
+              "options": [
+                "Turns your speech into typed text",
+                "Records a song",
+                "Starts a phone call",
+                "Translates the app"
+              ],
+              "answer": 0,
+              "explanation": "Dictation converts speech into text for a normal message."
+            },
+            {
+              "question": "Which is a good use of voice mode?",
+              "options": [
+                "Charging your phone",
+                "Practicing for a job interview",
+                "Changing your wallpaper",
+                "Taking a photo"
+              ],
+              "answer": 1,
+              "explanation": "Spoken practice — like interviews or small talk — is a great fit."
+            }
+          ]
+        },
+        {
+          "id": "phone-power-tips",
+          "title": "Phone power tips",
+          "summary": "Make Claude part of your daily routine.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "Handy tricks on your phone",
+              "items": [
+                "**Share to Claude**: in many apps, tap Share → Claude to send text, links or photos",
+                "**Camera**: snap documents, labels or whiteboards and ask questions",
+                "**Pick up anywhere**: chats sync between phone, computer and web",
+                "**Widgets & shortcuts**: add Claude to your home screen for quick access"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Interactive answers",
+              "body": "On your phone, Claude can show **interactive charts, diagrams and mini-apps** right in the conversation — tap and explore them."
+            },
+            {
+              "kind": "tip",
+              "title": "Start on your phone, finish on your computer",
+              "body": "Begin a task on the go and continue at your desk. Everything is in your chat history when you sign in."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "How do you send a web page from another app to Claude?",
+              "options": [
+                "Use Share → Claude",
+                "Retype it",
+                "Email it to yourself",
+                "You can't"
+              ],
+              "answer": 0,
+              "explanation": "The Share button lets you send content from other apps straight to Claude."
+            },
+            {
+              "question": "Can you start a chat on your phone and continue it on a computer?",
+              "options": [
+                "Only with a cable",
+                "Yes, chats sync when you're signed in",
+                "No, never",
+                "Only on Fridays"
+              ],
+              "answer": 1,
+              "explanation": "Your chat history syncs across devices."
+            },
+            {
+              "question": "What can Claude show inside a conversation on your phone?",
+              "options": [
+                "Nothing",
+                "Only plain text",
+                "Interactive charts and diagrams",
+                "Only emojis"
+              ],
+              "answer": 2,
+              "explanation": "Claude can display interactive visuals right in the chat."
+            }
+          ]
+        },
+        {
+          "id": "everyday-routines",
+          "title": "Building an everyday habit",
+          "summary": "Small daily uses that add up.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "A day with Claude",
+              "items": [
+                "**Morning**: \"Help me plan my top 3 priorities today\"",
+                "**Commute**: voice chat to prep for a meeting",
+                "**Lunch**: snap the menu — \"What's a healthy choice here?\"",
+                "**Afternoon**: draft a tricky email reply",
+                "**Evening**: \"Suggest a quick dinner with chicken and rice\""
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "Use the Prompt Builder",
+              "body": "Not sure how to ask? Use this app's **Prompt Builder** — answer a few questions, then tap **Copy & open Claude**."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Plan tomorrow",
+              "body": "End today by asking Claude to plan tomorrow.",
+              "prompt": "Here's what I need to do tomorrow: [list your tasks]. Help me put them in a sensible order with time estimates, and tell me what to do first."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Which is a quick daily use of Claude?",
+              "options": [
+                "Planning your top 3 priorities",
+                "Changing your SIM card",
+                "Paying taxes automatically",
+                "Replacing your phone's battery"
+              ],
+              "answer": 0,
+              "explanation": "Small daily tasks like planning your day build a helpful habit."
+            },
+            {
+              "question": "What's the fastest way in this app to build a good prompt?",
+              "options": [
+                "Copy a random website",
+                "Use the Prompt Builder",
+                "Guess",
+                "Ask a stranger"
+              ],
+              "answer": 1,
+              "explanation": "The Prompt Builder walks you through the key ingredients."
+            },
+            {
+              "question": "What should you replace \"[list your tasks]\" with?",
+              "options": [
+                "The word \"tasks\"",
+                "Your password",
+                "Nothing — leave it",
+                "Your actual tasks for tomorrow"
+              ],
+              "answer": 3,
+              "explanation": "Brackets mark spots where you add your own details."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "safety-privacy",
+      "title": "Safety, Privacy & Good Habits",
+      "subtitle": "Use Claude confidently and responsibly — at home and at work.",
+      "icon": "lock.shield.fill",
+      "color": "#B23B3B",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "privacy-settings",
+          "title": "Your privacy settings",
+          "summary": "Control what's saved and how your data is used.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "text",
+              "title": "You have choices",
+              "body": "Claude's **Settings → Privacy** area lets you review how your conversations are handled — including whether your chats may be used to help improve Claude. Review these settings once so they match your comfort level."
+            },
+            {
+              "kind": "steps",
+              "title": "A quick privacy check-up",
+              "items": [
+                "Open **Settings → Privacy** and review the options",
+                "Decide whether to allow your chats to help improve Claude",
+                "Use **incognito chats** for anything you'd rather not keep",
+                "Delete old chats you no longer need"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Work accounts are different",
+              "body": "If you use Claude through your employer (Team or Enterprise), your company sets many of these policies. Ask your IT team how Claude should be used at work."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Where do you review how your conversations are handled?",
+              "options": [
+                "Settings → Privacy",
+                "Nowhere",
+                "The App Store",
+                "Your email inbox"
+              ],
+              "answer": 0,
+              "explanation": "Privacy options are in Claude's Settings."
+            },
+            {
+              "question": "Who sets the policies for a company Claude account?",
+              "options": [
+                "Your neighbors",
+                "Your employer",
+                "Nobody",
+                "The app's icon"
+              ],
+              "answer": 1,
+              "explanation": "On Team and Enterprise plans, your organization manages many settings."
+            },
+            {
+              "question": "What's an easy way to keep a sensitive chat out of your history?",
+              "options": [
+                "Use an incognito chat",
+                "Use all caps",
+                "Type faster",
+                "Turn off Wi-Fi halfway"
+              ],
+              "answer": 0,
+              "explanation": "Incognito chats aren't saved to your history."
+            }
+          ]
+        },
+        {
+          "id": "what-not-to-share",
+          "title": "What not to share",
+          "summary": "Simple rules to keep you and others safe.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "Never share",
+              "items": [
+                "**Passwords** or security codes",
+                "Full **credit card, bank account or Social Security numbers**",
+                "**Other people's private information** without permission",
+                "**Confidential work information** your company hasn't approved"
+              ]
+            },
+            {
+              "kind": "compare",
+              "title": "Share the situation, not the secrets",
+              "bad": "My card number is 4111 1111 1111 1111 and it was charged twice — what should I do?",
+              "good": "My credit card was charged twice for the same purchase. Help me write a short message to my bank asking for a refund.",
+              "body": "You can get just as much help without sharing sensitive numbers."
+            },
+            {
+              "kind": "warning",
+              "title": "Watch out for scams",
+              "body": "Claude will never ask for your password or payment details in a chat. If a message or website claiming to be Claude asks for them, don't share."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Which is safe to share with Claude?",
+              "options": [
+                "Your bank PIN",
+                "Your Social Security number",
+                "A description of a billing problem without card numbers",
+                "Your password"
+              ],
+              "answer": 2,
+              "explanation": "Describe the situation; leave out sensitive numbers."
+            },
+            {
+              "question": "A website claiming to be Claude asks for your bank PIN. You should…",
+              "options": [
+                "Share half of it",
+                "Email it instead",
+                "Not share it — it's likely a scam",
+                "Share it"
+              ],
+              "answer": 2,
+              "explanation": "Claude never asks for passwords or payment details in a chat."
+            },
+            {
+              "question": "Can you share a coworker's private medical details?",
+              "options": [
+                "Only on weekends",
+                "Only in voice mode",
+                "Yes, always",
+                "Not without their permission"
+              ],
+              "answer": 3,
+              "explanation": "Respect other people's privacy — don't share their personal information."
+            }
+          ]
+        },
+        {
+          "id": "responsible-use",
+          "title": "Using AI responsibly",
+          "summary": "Honesty, judgment and being a good AI citizen.",
+          "minutes": 4,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "Good habits",
+              "items": [
+                "**You're responsible** for what you send or publish — review it first",
+                "**Be transparent** when AI helped, especially at work or school",
+                "**Check for bias** — ask Claude to consider other perspectives",
+                "**Keep your own judgment** — Claude is an assistant, not the boss"
+              ]
+            },
+            {
+              "kind": "text",
+              "title": "Claude has boundaries",
+              "body": "Claude is designed to be helpful, honest and safe. It may decline requests that could cause harm. If that happens and you think it misunderstood, explain what you're actually trying to do."
+            },
+            {
+              "kind": "tip",
+              "title": "Make it sound like you",
+              "body": "Ask Claude to match your voice: \"Here's an email I wrote last week. Write in a similar style.\" Then add your personal touch."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Who is responsible for an email Claude drafted for you?",
+              "options": [
+                "Anthropic",
+                "Claude",
+                "You — review it before sending",
+                "Nobody"
+              ],
+              "answer": 2,
+              "explanation": "You're responsible for what you send, so always review it."
+            },
+            {
+              "question": "Claude declines a harmless request because it misunderstood. What can you do?",
+              "options": [
+                "Give up on AI",
+                "Use all capital letters",
+                "Explain what you're actually trying to do",
+                "Delete your account"
+              ],
+              "answer": 2,
+              "explanation": "Adding context usually clears up misunderstandings."
+            },
+            {
+              "question": "How can you make Claude's writing sound more like you?",
+              "options": [
+                "Share a sample of your writing and ask it to match the style",
+                "You can't",
+                "Ask for random words",
+                "Use only emojis"
+              ],
+              "answer": 0,
+              "explanation": "Giving Claude a sample helps it match your voice."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "real-world",
+      "title": "Real-World Playbooks",
+      "subtitle": "Put it all together with ready-to-use workflows for work, business and life.",
+      "icon": "star.circle.fill",
+      "color": "#C9962E",
+      "isFree": false,
+      "lessons": [
+        {
+          "id": "playbook-work",
+          "title": "Playbook: At work",
+          "summary": "Meetings, emails, reports and more.",
+          "minutes": 6,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "Five workflows to try this week",
+              "items": [
+                "**Meeting prep**: attach the agenda → \"What should I prepare and what questions might come up?\"",
+                "**Meeting notes**: paste your notes → \"Summarize decisions and action items with owners\"",
+                "**Inbox help**: \"Draft a polite reply that says yes but asks to move the deadline\"",
+                "**Reports**: attach data → \"Write a one-page summary with 3 key insights\"",
+                "**Learning**: \"Explain our new expense policy in plain English\""
+              ]
+            },
+            {
+              "kind": "example",
+              "title": "Action items prompt",
+              "prompt": "Here are my notes from today's team meeting. List every decision we made, then every action item in a table with: task, owner, and due date. If an owner or date wasn't mentioned, write \"TBD\"."
+            },
+            {
+              "kind": "tip",
+              "title": "Create a 'Work' project",
+              "body": "Put your role, team and writing style into a project so every work chat starts with context."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "What's a good way to turn messy meeting notes into something useful?",
+              "options": [
+                "Delete them",
+                "Ignore them",
+                "Ask Claude to list decisions and action items with owners",
+                "Print them"
+              ],
+              "answer": 2,
+              "explanation": "Claude is excellent at organizing notes into clear decisions and tasks."
+            },
+            {
+              "question": "Why write \"TBD\" for missing details?",
+              "options": [
+                "To make it longer",
+                "To prevent Claude from guessing",
+                "It looks nice",
+                "It's required"
+              ],
+              "answer": 1,
+              "explanation": "Telling Claude how to handle missing info prevents made-up details."
+            },
+            {
+              "question": "What's the benefit of a 'Work' project?",
+              "options": [
+                "It hides your job",
+                "It makes Claude free",
+                "Every work chat starts with your context",
+                "Nothing"
+              ],
+              "answer": 2,
+              "explanation": "Projects keep your work context ready for every chat."
+            }
+          ]
+        },
+        {
+          "id": "playbook-business",
+          "title": "Playbook: Small business",
+          "summary": "Marketing, customers and operations.",
+          "minutes": 6,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "Five workflows for business owners",
+              "items": [
+                "**Marketing**: \"Write a month of social posts for our spring sale\"",
+                "**Customers**: \"Draft a kind reply to this upset review\"",
+                "**Pricing**: \"Help me think through prices for a new service\"",
+                "**Operations**: \"Create an opening checklist for new staff\"",
+                "**Planning**: Research → \"What are the risks of opening a second location?\""
+              ]
+            },
+            {
+              "kind": "example",
+              "title": "A month of content",
+              "prompt": "I run a neighborhood plant shop. Create a 4-week social media plan with 3 posts per week for our spring sale (20% off all succulents, April 1–15). Use a friendly tone, include a call to action, and present it as a table with date, platform, caption and image idea."
+            },
+            {
+              "kind": "tip",
+              "title": "Build a 'Business brain' project",
+              "body": "Add your products, prices, policies and brand voice to a project once — and every answer will sound like your business."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Which prompt gets the best social media plan?",
+              "options": [
+                "\"Help\"",
+                "\"Make content\"",
+                "\"Posts\"",
+                "One with the business, offer, dates, tone and format"
+              ],
+              "answer": 3,
+              "explanation": "Specific details produce posts you can use right away."
+            },
+            {
+              "question": "What belongs in a 'Business brain' project?",
+              "options": [
+                "Nothing",
+                "Products, prices, policies and brand voice",
+                "Random memes",
+                "Your personal passwords"
+              ],
+              "answer": 1,
+              "explanation": "Business knowledge helps Claude write consistently for your brand."
+            },
+            {
+              "question": "Which feature fits \"What are the risks of opening a second location?\"",
+              "options": [
+                "Voice mode only",
+                "Styles",
+                "Incognito",
+                "Research"
+              ],
+              "answer": 3,
+              "explanation": "Big, multi-source questions are perfect for Research."
+            }
+          ]
+        },
+        {
+          "id": "playbook-life",
+          "title": "Playbook: Everyday life",
+          "summary": "Home, family, health and learning.",
+          "minutes": 5,
+          "cards": [
+            {
+              "kind": "steps",
+              "title": "Five everyday workflows",
+              "items": [
+                "**Meals**: \"Plan 5 dinners for a family of 4, under $80, no nuts\"",
+                "**Travel**: \"Plan a relaxed 3-day trip to Chicago for two people in their 60s\"",
+                "**Health appointments**: \"Help me write questions to ask my doctor about my knee pain\"",
+                "**Paperwork**: photo of a letter → \"What does this mean and what should I do?\"",
+                "**Learning**: \"Teach me the basics of investing, one short lesson a day\""
+              ]
+            },
+            {
+              "kind": "tip",
+              "title": "Keep going after the course",
+              "body": "The best way to learn Claude is to use it a little every day. Try one new thing this week — and come back to the Prompt Builder anytime."
+            },
+            {
+              "kind": "tryIt",
+              "title": "Your graduation challenge",
+              "body": "Use everything you've learned: context, audience, format and a follow-up.",
+              "prompt": "I'd like to build a new healthy habit this month. Ask me 3 questions about my routine and goals first, then create a simple 4-week plan as a checklist."
+            }
+          ],
+          "quiz": [
+            {
+              "question": "Which meal-planning prompt is best?",
+              "options": [
+                "\"Food\"",
+                "\"Recipes please\"",
+                "\"Plan 5 dinners for a family of 4, under $80, no nuts\"",
+                "\"Dinner?\""
+              ],
+              "answer": 2,
+              "explanation": "Including people, budget and restrictions gets a plan you can actually use."
+            },
+            {
+              "question": "How can Claude help before a doctor's appointment?",
+              "options": [
+                "Prescribe medicine",
+                "Help you prepare clear questions",
+                "Book surgery",
+                "Replace the doctor"
+              ],
+              "answer": 1,
+              "explanation": "Claude can help you prepare — decisions stay with your doctor."
+            },
+            {
+              "question": "What's the best way to keep improving with Claude?",
+              "options": [
+                "Use one prompt forever",
+                "Use it a little every day",
+                "Only read about it",
+                "Never use it again"
+              ],
+              "answer": 1,
+              "explanation": "Regular practice is the fastest path to confidence."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

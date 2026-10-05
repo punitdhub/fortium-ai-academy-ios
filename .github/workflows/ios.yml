@@ -1,0 +1,35 @@
+name: iOS build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  content:
+    name: Validate course content
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 scripts/validate_content.py
+
+  build:
+    name: Build for iOS Simulator
+    runs-on: macos-15
+    needs: content
+    steps:
+      - uses: actions/checkout@v4
+      - name: Show Xcode version
+        run: xcodebuild -version
+      - name: Build
+        run: |
+          set -o pipefail
+          xcodebuild build \
+            -project FortiumAIAcademy.xcodeproj \
+            -scheme FortiumAIAcademy \
+            -configuration Debug \
+            -destination 'generic/platform=iOS Simulator' \
+            CODE_SIGNING_ALLOWED=NO \
+            | tee build.log | grep -E "error:|warning:|BUILD (SUCCEEDED|FAILED)" || true
+          grep -q "BUILD SUCCEEDED" build.log
