@@ -292,7 +292,40 @@
               "image": "claude-new-chat-web.png",
               "platform": "Web",
               "body": "On claude.ai the layout is similar: your chats are on the left, and the message box is in the middle.",
-              "highlights": []
+              "highlights": [
+                {
+                  "x": 0.003,
+                  "y": 0.143,
+                  "w": 0.184,
+                  "h": 0.059,
+                  "label": "**New chat**: start a fresh conversation.",
+                  "badge": "right"
+                },
+                {
+                  "x": 0.003,
+                  "y": 0.516,
+                  "w": 0.189,
+                  "h": 0.479,
+                  "label": "**Your past chats** (blurred here for privacy). Click one to pick up where you left off.",
+                  "badge": "right"
+                },
+                {
+                  "x": 0.534,
+                  "y": 0.603,
+                  "w": 0.442,
+                  "h": 0.167,
+                  "label": "**Type here**, then press Enter to send.",
+                  "badge": "top"
+                },
+                {
+                  "x": 0.538,
+                  "y": 0.703,
+                  "w": 0.029,
+                  "h": 0.054,
+                  "label": "**+** adds files, photos and tools.",
+                  "badge": "bottom"
+                }
+              ]
             },
             {
               "kind": "text",
@@ -466,8 +499,33 @@
               "title": "Where to edit and retry",
               "image": "claude-edit-retry.png",
               "platform": "Web",
-              "body": "Hover over (or long-press) a message to see these options.",
-              "highlights": []
+              "body": "On a computer, hover over your message to see the edit pencil. The retry button sits under Claude's reply. On a phone, long-press your message.",
+              "highlights": [
+                {
+                  "x": 0.488,
+                  "y": 0.125,
+                  "w": 0.511,
+                  "h": 0.094,
+                  "label": "Hover over **your message** to see its options.",
+                  "badge": "left"
+                },
+                {
+                  "x": 0.955,
+                  "y": 0.232,
+                  "w": 0.03,
+                  "h": 0.037,
+                  "label": "**Edit** (the pencil): change your message and Claude answers the new version.",
+                  "badge": "bottom"
+                },
+                {
+                  "x": 0.451,
+                  "y": 0.959,
+                  "w": 0.03,
+                  "h": 0.039,
+                  "label": "**Retry**: get a fresh answer to the same message.",
+                  "badge": "right"
+                }
+              ]
             },
             {
               "kind": "tip",
