@@ -21,7 +21,7 @@ struct ScreenshotView: View {
             if let image = card.screenshotImage {
                 Button { showFullScreen = true } label: {
                     AnnotatedScreenshot(image: image, highlights: card.highlights ?? [])
-                        .frame(maxHeight: 460)
+                        .frame(maxHeight: 520)
                         .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(.plain)
@@ -114,7 +114,7 @@ struct AnnotatedScreenshot: View {
                             .frame(width: rect.width, height: rect.height)
                             .position(x: rect.midX, y: rect.midY)
                         CalloutNumber(number: index + 1)
-                            .position(x: max(12, rect.minX), y: max(12, rect.minY))
+                            .position(badgePoint(for: rect, placement: h.badge, in: geo.size))
                     }
                 }
             }
@@ -125,6 +125,21 @@ struct AnnotatedScreenshot: View {
             )
             .shadow(color: .black.opacity(0.12), radius: 10, y: 4)
     }
+
+    private func badgePoint(for rect: CGRect, placement: String?, in size: CGSize) -> CGPoint {
+        let gap: CGFloat = 14
+        let point: CGPoint
+        switch placement {
+        case "top": point = CGPoint(x: rect.midX, y: rect.minY - gap)
+        case "bottom": point = CGPoint(x: rect.midX, y: rect.maxY + gap)
+        case "left": point = CGPoint(x: rect.minX - gap, y: rect.midY)
+        case "right": point = CGPoint(x: rect.maxX + gap, y: rect.midY)
+        case "insideRight": point = CGPoint(x: rect.maxX - gap - 2, y: rect.midY)
+        default: point = CGPoint(x: rect.minX, y: rect.minY)
+        }
+        // Keep the whole badge on the picture.
+        return CGPoint(x: min(max(point.x, 12), size.width - 12), y: min(max(point.y, 12), size.height - 12))
+    }
 }
 
 struct CalloutNumber: View {
@@ -132,9 +147,9 @@ struct CalloutNumber: View {
 
     var body: some View {
         Text("\(number)")
-            .font(.system(size: 14, weight: .heavy, design: .rounded))
+            .font(.system(size: 13, weight: .heavy, design: .rounded))
             .foregroundStyle(Color(hex: "#1E2B3A"))
-            .frame(width: 24, height: 24)
+            .frame(width: 22, height: 22)
             .background(Color(hex: "#D9B779"), in: Circle())
             .overlay(Circle().strokeBorder(.white, lineWidth: 2))
             .accessibilityHidden(true)

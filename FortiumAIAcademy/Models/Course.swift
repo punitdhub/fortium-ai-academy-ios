@@ -50,6 +50,9 @@ struct LessonCard: Codable, Hashable {
         let w: Double
         let h: Double
         var label: String?
+        /// Where the number badge sits so it doesn't cover the button:
+        /// "topLeft" (default), "top", "bottom", "left", "right", "insideRight".
+        var badge: String?
     }
 
     let kind: Kind

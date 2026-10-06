@@ -58,6 +58,7 @@ jobs:
           shot 08-progress       light -hasOnboarded YES -demoScreen progress -demoSeed YES
           shot 09-paywall        light -hasOnboarded YES -demoScreen paywall
           shot 12-screenshot-card light -hasOnboarded YES -demoScreen screenshot
+          shot 15-voice-card     light -hasOnboarded YES -demoScreen screenshot -demoLesson voice-mode -debugUnlockPro YES
           shot 13-reminder-onboarding light -hasOnboarded NO -demoScreen reminder
           shot 14-settings       light -hasOnboarded YES -demoScreen settings -remindersEnabled YES
           shot 10-home-dark      dark  -hasOnboarded YES -userName Punit -demoSeed YES

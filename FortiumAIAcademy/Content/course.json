@@ -33,21 +33,24 @@
                   "y": 0.068,
                   "w": 0.815,
                   "h": 0.109,
-                  "label": "**Your message.**"
+                  "label": "**Your message.**",
+                  "badge": "left"
                 },
                 {
                   "x": 0.028,
                   "y": 0.202,
                   "w": 0.937,
                   "h": 0.575,
-                  "label": "**Claude's reply.** Scroll down to read the rest."
+                  "label": "**Claude's reply.** Scroll down to read the rest.",
+                  "badge": "top"
                 },
                 {
                   "x": 0.05,
                   "y": 0.862,
                   "w": 0.9,
                   "h": 0.047,
-                  "label": "**Reply here** to keep the conversation going."
+                  "label": "**Reply here** to keep the conversation going.",
+                  "badge": "insideRight"
                 }
               ]
             },
@@ -163,21 +166,24 @@
                   "y": 0.254,
                   "w": 0.495,
                   "h": 0.061,
-                  "label": "The app is called **Claude by Anthropic**."
+                  "label": "The app is called **Claude by Anthropic**.",
+                  "badge": "right"
                 },
                 {
                   "x": 0.345,
                   "y": 0.349,
                   "w": 0.177,
                   "h": 0.044,
-                  "label": "Tap **Get** to download it (it says **Open** once installed)."
+                  "label": "Tap **Get** to download it (it says **Open** once installed).",
+                  "badge": "right"
                 },
                 {
                   "x": 0.785,
                   "y": 0.422,
                   "w": 0.212,
                   "h": 0.083,
-                  "label": "Check that the developer is **Anthropic PBC**."
+                  "label": "Check that the developer is **Anthropic PBC**.",
+                  "badge": "top"
                 }
               ]
             }
@@ -241,28 +247,32 @@
                   "y": 0.862,
                   "w": 0.9,
                   "h": 0.047,
-                  "label": "**Type here.** A send arrow appears as soon as you start typing."
+                  "label": "**Type here.** A send arrow appears as soon as you start typing.",
+                  "badge": "insideRight"
                 },
                 {
                   "x": 0.052,
                   "y": 0.913,
                   "w": 0.086,
                   "h": 0.043,
-                  "label": "**+** adds photos, files and tools."
+                  "label": "**+** adds photos, files and tools.",
+                  "badge": "bottom"
                 },
                 {
                   "x": 0.042,
                   "y": 0.019,
                   "w": 0.106,
                   "h": 0.051,
-                  "label": "**Menu**: find your past chats and Projects."
+                  "label": "**Menu**: find your past chats and Projects.",
+                  "badge": "right"
                 },
                 {
                   "x": 0.858,
                   "y": 0.913,
                   "w": 0.09,
                   "h": 0.043,
-                  "label": "**Voice**: talk with Claude out loud."
+                  "label": "**Voice**: talk with Claude out loud.",
+                  "badge": "bottom"
                 }
               ]
             },
@@ -706,21 +716,24 @@
                   "y": 0.54,
                   "w": 0.29,
                   "h": 0.112,
-                  "label": "**Camera**: take a photo right now."
+                  "label": "**Camera**: take a photo right now.",
+                  "badge": "top"
                 },
                 {
                   "x": 0.356,
                   "y": 0.54,
                   "w": 0.288,
                   "h": 0.112,
-                  "label": "**Photos**: choose from your photo library."
+                  "label": "**Photos**: choose from your photo library.",
+                  "badge": "top"
                 },
                 {
                   "x": 0.658,
                   "y": 0.54,
                   "w": 0.29,
                   "h": 0.112,
-                  "label": "**Files**: attach a PDF or document."
+                  "label": "**Files**: attach a PDF or document.",
+                  "badge": "top"
                 }
               ]
             },
@@ -2245,8 +2258,41 @@
               "title": "Voice mode",
               "image": "claude-voice-mode.png",
               "platform": "iPhone app",
-              "body": "Speak naturally. Claude listens, then talks back.",
-              "highlights": []
+              "body": "Tap the **black sound-wave button** next to the message box to start. Speak naturally; Claude listens, then talks back.",
+              "highlights": [
+                {
+                  "x": 0.415,
+                  "y": 0.811,
+                  "w": 0.17,
+                  "h": 0.081,
+                  "label": "**Microphone**: Claude is listening. Just talk naturally.",
+                  "badge": "left"
+                },
+                {
+                  "x": 0.4,
+                  "y": 0.739,
+                  "w": 0.2,
+                  "h": 0.039,
+                  "label": "**What you said** appears here as you speak.",
+                  "badge": "left"
+                },
+                {
+                  "x": 0.728,
+                  "y": 0.904,
+                  "w": 0.112,
+                  "h": 0.056,
+                  "label": "**Speaker**: controls how Claude's voice plays.",
+                  "badge": "top"
+                },
+                {
+                  "x": 0.848,
+                  "y": 0.904,
+                  "w": 0.112,
+                  "h": 0.056,
+                  "label": "**End** the voice conversation. It's saved as a normal chat.",
+                  "badge": "top"
+                }
+              ]
             },
             {
               "kind": "tip",
@@ -2265,21 +2311,24 @@
                   "y": 0.862,
                   "w": 0.9,
                   "h": 0.04,
-                  "label": "**Your words appear here** as you speak."
+                  "label": "**Your words appear here** as you speak.",
+                  "badge": "insideRight"
                 },
                 {
                   "x": 0.758,
                   "y": 0.913,
                   "w": 0.09,
                   "h": 0.043,
-                  "label": "**Stop** recording."
+                  "label": "**Stop** recording.",
+                  "badge": "bottom"
                 },
                 {
                   "x": 0.858,
                   "y": 0.913,
                   "w": 0.09,
                   "h": 0.043,
-                  "label": "**Send** your message."
+                  "label": "**Send** your message.",
+                  "badge": "bottom"
                 }
               ]
             },

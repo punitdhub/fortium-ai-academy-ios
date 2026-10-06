@@ -58,8 +58,9 @@ struct HomeView: View {
                     activeLesson = ActiveLesson(section: section, lesson: lesson)
                 }
                 if Demo.is("paywall") { showPaywall = true }
-                if Demo.is("screenshot"), let section = courseStore.sections.first,
-                   let lesson = section.lessons.first(where: { $0.id == "first-chat" }) {
+                let demoLesson = UserDefaults.standard.string(forKey: "demoLesson") ?? "first-chat"
+                if Demo.is("screenshot"), let section = courseStore.section(containing: demoLesson),
+                   let lesson = courseStore.lesson(id: demoLesson) {
                     activeLesson = ActiveLesson(section: section, lesson: lesson)
                 }
             }
