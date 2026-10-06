@@ -295,33 +295,41 @@
               "highlights": [
                 {
                   "x": 0.003,
-                  "y": 0.143,
-                  "w": 0.184,
-                  "h": 0.059,
+                  "y": 0.106,
+                  "w": 0.185,
+                  "h": 0.04,
                   "label": "**New chat**: start a fresh conversation.",
                   "badge": "right"
                 },
                 {
                   "x": 0.003,
-                  "y": 0.516,
-                  "w": 0.189,
-                  "h": 0.479,
-                  "label": "**Your past chats** (blurred here for privacy). Click one to pick up where you left off.",
+                  "y": 0.379,
+                  "w": 0.185,
+                  "h": 0.109,
+                  "label": "Your **projects** can be pinned here.",
                   "badge": "right"
                 },
                 {
-                  "x": 0.534,
-                  "y": 0.603,
-                  "w": 0.442,
-                  "h": 0.167,
+                  "x": 0.003,
+                  "y": 0.55,
+                  "w": 0.19,
+                  "h": 0.444,
+                  "label": "**Your recent chats**. Click one to pick up where you left off (private ones are blurred here).",
+                  "badge": "right"
+                },
+                {
+                  "x": 0.533,
+                  "y": 0.448,
+                  "w": 0.444,
+                  "h": 0.129,
                   "label": "**Type here**, then press Enter to send.",
                   "badge": "top"
                 },
                 {
-                  "x": 0.538,
-                  "y": 0.703,
-                  "w": 0.029,
-                  "h": 0.054,
+                  "x": 0.536,
+                  "y": 0.524,
+                  "w": 0.03,
+                  "h": 0.046,
                   "label": "**+** adds files, photos and tools.",
                   "badge": "bottom"
                 }
@@ -499,31 +507,23 @@
               "title": "Where to edit and retry",
               "image": "claude-edit-retry.png",
               "platform": "Web",
-              "body": "On a computer, hover over your message to see the edit pencil. The retry button sits under Claude's reply. On a phone, long-press your message.",
+              "body": "On a computer, hover over your message and these buttons appear. On a phone, long-press your message.",
               "highlights": [
                 {
-                  "x": 0.488,
-                  "y": 0.125,
-                  "w": 0.511,
-                  "h": 0.094,
-                  "label": "Hover over **your message** to see its options.",
-                  "badge": "left"
+                  "x": 0.012,
+                  "y": 0.127,
+                  "w": 0.958,
+                  "h": 0.556,
+                  "label": "Hover over **your message** (on a phone, long-press it).",
+                  "badge": "topLeft"
                 },
                 {
-                  "x": 0.955,
-                  "y": 0.232,
-                  "w": 0.03,
-                  "h": 0.037,
-                  "label": "**Edit** (the pencil): change your message and Claude answers the new version.",
-                  "badge": "bottom"
-                },
-                {
-                  "x": 0.451,
-                  "y": 0.959,
-                  "w": 0.03,
-                  "h": 0.039,
-                  "label": "**Retry**: get a fresh answer to the same message.",
-                  "badge": "right"
+                  "x": 0.852,
+                  "y": 0.746,
+                  "w": 0.117,
+                  "h": 0.198,
+                  "label": "**Retry** (↻) gets a fresh answer. **Edit** (✎) lets you change your message.",
+                  "badge": "top"
                 }
               ]
             },
