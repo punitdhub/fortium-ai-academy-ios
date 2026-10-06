@@ -1,6 +1,6 @@
 # Screenshot shot list
 
-Lessons have **23 screenshot slots**. Until a screenshot is added, debug builds show a dashed "Screenshot needed" placeholder and App Store builds hide the card, so the app works at any stage.
+Lessons have **24 screenshot slots**. Until a screenshot is added, debug builds show a dashed "Screenshot needed" placeholder and App Store builds hide the card, so the app works at any stage.
 
 ## Before you start (5 minutes)
 
@@ -47,8 +47,9 @@ Callouts (the numbered gold boxes) are set in `course.json` under each card's `h
 | 19 | `claude-incognito.png` | Web | A new chat with incognito mode turned on | Incognito icon/indicator |
 | 20 | `claude-style-picker.png` | Web | The styles menu open | Style list · create a style |
 | 21 | `claude-model-picker.png` | Web | The model picker open | Model menu · default model |
-| 22 | `claude-voice-mode.png` | iPhone app | Voice mode active | Voice button · end button |
+| 22 | `claude-voice-mode.png` | iPhone app | Voice mode active: tap the **black sound-wave button** (not the microphone) so the full-screen voice conversation opens | Voice button · end button |
 | 23 | `claude-privacy-settings.png` | Web | *Settings → Privacy* | The "help improve Claude" setting · delete/export options |
+| 24 | `claude-dictation.png` | iPhone app | The microphone (dictation) recording, with words appearing in the message box | Text area · stop · send |
 
 ## A note on using Claude's screens
 

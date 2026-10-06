@@ -27,7 +27,29 @@
               "image": "claude-first-reply.png",
               "platform": "iPhone app",
               "body": "You type at the bottom, and Claude's reply appears above — just like a text conversation.",
-              "highlights": []
+              "highlights": [
+                {
+                  "x": 0.148,
+                  "y": 0.068,
+                  "w": 0.815,
+                  "h": 0.109,
+                  "label": "**Your message.**"
+                },
+                {
+                  "x": 0.028,
+                  "y": 0.202,
+                  "w": 0.937,
+                  "h": 0.575,
+                  "label": "**Claude's reply.** Scroll down to read the rest."
+                },
+                {
+                  "x": 0.05,
+                  "y": 0.862,
+                  "w": 0.9,
+                  "h": 0.047,
+                  "label": "**Reply here** to keep the conversation going."
+                }
+              ]
             },
             {
               "kind": "steps",
@@ -135,7 +157,29 @@
               "image": "claude-app-store.png",
               "platform": "iPhone app",
               "body": "Check that the developer listed under the name is **Anthropic** before you tap Get.",
-              "highlights": []
+              "highlights": [
+                {
+                  "x": 0.34,
+                  "y": 0.254,
+                  "w": 0.495,
+                  "h": 0.061,
+                  "label": "The app is called **Claude by Anthropic**."
+                },
+                {
+                  "x": 0.345,
+                  "y": 0.349,
+                  "w": 0.177,
+                  "h": 0.044,
+                  "label": "Tap **Get** to download it (it says **Open** once installed)."
+                },
+                {
+                  "x": 0.785,
+                  "y": 0.422,
+                  "w": 0.212,
+                  "h": 0.083,
+                  "label": "Check that the developer is **Anthropic PBC**."
+                }
+              ]
             }
           ],
           "quiz": [
@@ -190,8 +234,37 @@
               "title": "Your starting screen",
               "image": "claude-new-chat.png",
               "platform": "iPhone app",
-              "body": "This is a brand-new chat. The numbered spots show where to type, send, and find your past chats.",
-              "highlights": []
+              "body": "This is a brand-new chat. The numbered spots show where to type, add files, find past chats and talk out loud.",
+              "highlights": [
+                {
+                  "x": 0.05,
+                  "y": 0.862,
+                  "w": 0.9,
+                  "h": 0.047,
+                  "label": "**Type here.** A send arrow appears as soon as you start typing."
+                },
+                {
+                  "x": 0.052,
+                  "y": 0.913,
+                  "w": 0.086,
+                  "h": 0.043,
+                  "label": "**+** adds photos, files and tools."
+                },
+                {
+                  "x": 0.042,
+                  "y": 0.019,
+                  "w": 0.106,
+                  "h": 0.051,
+                  "label": "**Menu**: find your past chats and Projects."
+                },
+                {
+                  "x": 0.858,
+                  "y": 0.913,
+                  "w": 0.09,
+                  "h": 0.043,
+                  "label": "**Voice**: talk with Claude out loud."
+                }
+              ]
             },
             {
               "kind": "steps",
@@ -627,7 +700,29 @@
               "image": "claude-camera-option.png",
               "platform": "iPhone app",
               "body": "Tap **+** and choose the camera or your photo library.",
-              "highlights": []
+              "highlights": [
+                {
+                  "x": 0.052,
+                  "y": 0.54,
+                  "w": 0.29,
+                  "h": 0.112,
+                  "label": "**Camera**: take a photo right now."
+                },
+                {
+                  "x": 0.356,
+                  "y": 0.54,
+                  "w": 0.288,
+                  "h": 0.112,
+                  "label": "**Photos**: choose from your photo library."
+                },
+                {
+                  "x": 0.658,
+                  "y": 0.54,
+                  "w": 0.29,
+                  "h": 0.112,
+                  "label": "**Files**: attach a PDF or document."
+                }
+              ]
             },
             {
               "kind": "tryIt",
@@ -2157,6 +2252,36 @@
               "kind": "tip",
               "title": "Dictation vs. voice mode",
               "body": "The **microphone** on your keyboard turns speech into typed text for a normal message. **Voice mode** is a full spoken back-and-forth conversation."
+            },
+            {
+              "kind": "screenshot",
+              "title": "Dictation: talk instead of typing",
+              "image": "claude-dictation.png",
+              "platform": "iPhone app",
+              "body": "Tap the **microphone** and speak. Claude types what you say, and you can check it before sending.",
+              "highlights": [
+                {
+                  "x": 0.05,
+                  "y": 0.862,
+                  "w": 0.9,
+                  "h": 0.04,
+                  "label": "**Your words appear here** as you speak."
+                },
+                {
+                  "x": 0.758,
+                  "y": 0.913,
+                  "w": 0.09,
+                  "h": 0.043,
+                  "label": "**Stop** recording."
+                },
+                {
+                  "x": 0.858,
+                  "y": 0.913,
+                  "w": 0.09,
+                  "h": 0.043,
+                  "label": "**Send** your message."
+                }
+              ]
             },
             {
               "kind": "tryIt",
